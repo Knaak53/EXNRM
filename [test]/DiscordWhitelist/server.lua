@@ -8,8 +8,7 @@ notWhitelistedMessage = "Para disfrutar del Servidor debes unirte al Discord htt
 
 whitelistRoles = { -- Role IDs needed to pass the whitelist
   
-    "837790639034728489", ----TESTEO
-    "701496608184860753", ---- Desarrollador  
+    
 }
 
 --- Code ---
