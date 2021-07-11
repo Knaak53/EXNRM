@@ -1,0 +1,336 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: white;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Signika', sans-serif;
+	opacity: 1;
+	user-select: none;
+	text-transform: uppercase;
+	background-color: rgba(17, 5, 17, 0.2);
+}
+
+#mainContainer{
+	width: 65%;
+	height: 55%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.2);
+	display: none;
+}
+
+#menu{
+	width: 40%;
+	height: 30%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.2);
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#menuHeader{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(10, 15, 60, 0.4);
+	border-bottom: 2px solid lightgrey;
+	font-size: 20pt;
+}
+
+#almacenImg{
+	width: 100%;
+	height: 88%;
+	background-image: url(img/weaponary.png);
+	background-size: 60%;
+	background-position: center center;
+	background-repeat:  no-repeat;
+}
+
+#tiendaImg{
+	width: 100%;
+	height: 88%;
+	background-image: url(img/shop.png);
+	background-size: 60%;
+	background-position: center center;
+	background-repeat:  no-repeat;
+}
+
+.menuItemHeader{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16pt;
+}
+
+#selectMenu{
+	width: 100%;
+	height: 85%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#almacen{
+	width: 45%;
+	height: 75%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.2);
+}
+
+#almacen:hover{
+	background-color: rgba(0, 120, 0, 0.4);
+	transform: scale(1.05);
+}
+
+#tienda{
+	width: 45%;
+	height: 75%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.2);
+}
+
+#tienda:hover{
+	background-color: rgba(0, 120, 0, 0.4);
+	transform: scale(1.05);
+}
+
+#header{
+	width: 100%;
+	height: 7%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	float: left;
+	background-color: rgba(10, 15, 60, 0.4);
+}
+
+#title{
+	width: 96%;
+	height: 100%;
+	box-sizing: border-box;
+	border-right: 2px solid lightgrey;
+	background-color: rgba(17, 5, 17, 0.2);
+	float: left;
+	border-radius: 20px 0px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18pt;
+}
+
+#close{
+	width: 4%;
+	height: 100%;
+	background-color: rgba(150, 0, 0, 0.4);
+	float: left;
+	border-radius: 0px 20px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#close:hover{
+	background-color: rgba(255, 0, 0, 0.6);
+}
+
+#store{
+	width: 100%;
+	height: 93%;
+	float: left;
+	border-radius: 0px 0px 20px 20px;
+}
+
+#plate{
+	width: 97%;
+	height: 75%;
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	box-sizing: border-box;
+	background-color: rgba(10, 15, 60, 0.4);
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	background-image: url(img/placa.png);
+	background-size: 88%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#buy{
+	width: 97%;
+	height: 19.5%;
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	box-sizing: border-box;
+	background-color: rgba(60, 60, 60, 0.4);	
+	border-radius: 16px;
+	border: 2px solid lightgrey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 29pt;
+	float: left;
+}
+
+#containers{
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+#leftPanel{
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+
+#weapons{
+	width: 98.3%;
+	height: 47.2%;
+	margin-top: 1.2%;
+	margin-left: 0.8%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.2);	
+	border-radius: 7px;
+	border: 2px solid lightgrey;
+	float: left;
+}
+
+
+#components{
+	width: 98.3%;
+	height: 47.2%;
+	margin-top: 1.2%;
+	margin-left: 0.8%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.2);
+	border-radius: 7px;
+	border: 2px solid lightgrey;
+	float: left;
+}
+
+.containerHeader{
+	width: 100%;
+	height: 15%;
+	box-sizing: border-box;
+	background-color: rgba(10, 15, 60, 0.4);
+	border-bottom: 2px solid lightgrey;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16pt;
+}
+
+.item{
+	width: 13.3vh;
+	height: 13.3vh;
+	margin-left: 2.5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	display: flex;
+	align-items: flex-end;
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);	
+}
+
+.component{
+	width: 13.3vh;
+	height: 13.3vh;
+	margin-left: 2.5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	display: flex;
+	align-items: flex-end;
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);	
+}
+
+.item-name{
+	width: 100%;
+	background-color: rgba(25, 25, 25, 0.6);
+	font-size: 10pt;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+	box-sizing: border-box;
+	border-top: 1px solid grey;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#weaponsPanel{
+	width: 100%;
+	height: 85%;
+	float: left;
+	border-radius: 0px 0px 20px 20px;
+	overflow-y: auto;
+}
+
+#weaponsPanel::-webkit-scrollbar-track{
+    background-color: none;
+    border: none;
+}
+
+#weaponsPanel::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+#weaponsPanel::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgba(17, 5, 17, 1);
+}
+
+#componentsPanel{
+	width: 100%;
+	height: 85%;
+	float: left;
+	border-radius: 0px 0px 20px 20px;
+	overflow-y: auto;
+}
+
+#componentsPanel::-webkit-scrollbar-track{
+    background-color: none;
+    border: none;
+}
+
+#componentsPanel::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+#componentsPanel::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgba(17, 5, 17, 1);
+}

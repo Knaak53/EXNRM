@@ -1,0 +1,149 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
+	<body>
+		
+		<!--<div id="hud"></div>
+		<div id="inventory_notifications">
+            <div id="container">
+                <div id="backpack_empty"></div>
+                <div id="backpack_full"></div>
+                    
+                img id="backpack3" src="img/Backpack_icon.png" style="height: 50%; width: 50%;"
+                img id="backpack" src="img/Backpack_icon.png" style="height: 50%; width: 50%;"
+                
+            </div>
+            
+            <div id="itemanimclass">
+                <img id="itemanim" src=""/>
+            </div> 
+        </div>-->
+    <div class="login-dark" id="inputtext" style="display: none; background-color: transparent;height: 100px;padding: 37px;width: 350px; ">
+      <form id="formInputs" method="submit" style="background-color: rgb(22,24,25);height: 100px;padding: 37px;width: 350px;">
+          <div class="form-group"><input class="form-control" style="width:320px;"type="text" name="value" id="inputUser" placeholder="" autofocus></div>
+          <div class="form-group">
+              <button id="subButton" class="btn btn-primary" type="submit" style="background-color: rgb(11, 180, 210); display: inline-block">Confirmar Compra</button>
+              <button id="notButton" class="btn btn-primary" type="button" style="background-color: rgb(11, 180, 210); display: inline-block; float: right;"> Cerrar </button>
+          </div>
+      </form>
+    </div>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="js/mustache.min.js"></script>
+		<script src="js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+        <script>
+            var audioPlayer = null;
+            // Listen for NUI Messages.
+            window.addEventListener('message', function(event) {
+                // Check for playSound transaction
+                if (event.data.transactionType == "playSound") {
+				
+                  if (audioPlayer != null) {
+                    audioPlayer.pause();
+                  }
+
+                  audioPlayer = new Howl({src: ["./sounds/" + event.data.transactionFile + ".ogg"]});
+                  audioPlayer.volume(event.data.transactionVolume);
+                  audioPlayer.play();
+                }
+            });
+        </script>
+        <script>
+            function getOutMove() {
+                var back = document.getElementById("backpack_empty");   
+                var item = document.getElementById("itemanimclass");  
+                var img =  document.getElementById("itemanim");  
+                var pos = 0;
+                var id = setInterval(frame, 5);
+                back.style.backgroundImage = 'url("img/items/Backpack_icon_open.png")';
+                img.style.opacity = 1;
+                function frame() {
+                    if (pos == 180) {
+                    
+                        clearInterval(id);
+                        img.src = "";
+                        img.style.opacity = 0;
+                    
+                    }else if (pos == 100){
+                        pos++;
+                    } else if(pos == 160){
+                        pos++;
+                        //back.style.backgroundImage = 'url("img/Backpack_icon_open.png")';
+                        back.style.backgroundImage = 'url("img/items/Backpack_icon.png")';
+                        img.src = "";
+                        img.style.opacity = 0;
+                    }else
+                        pos++; 
+                        item.style.top = pos + 'px'; 
+                        item.style.left = pos*1.7 + 'px'; 
+                }
+            }
+            function getInMove() {
+                var back = document.getElementById("backpack_empty");   
+                var item = document.getElementById("itemanimclass");  
+                var img =  document.getElementById("itemanim");  
+                var pos = 180;
+                var id = setInterval(frame, 5);
+                back.style.backgroundImage = 'url("img/items/Backpack_icon_open.png")';
+                img.style.opacity = 1;
+                function frame() {
+                    if (pos == 0) {
+                    clearInterval(id);
+                    img.src = "";
+                    img.style.opacity = 0;
+                    
+                    }else if (pos == 100){
+                        //back.style.backgroundImage = 'url("img/Backpack_icon_open.png")';
+                        pos--
+                    } else if(pos == 20){
+                        pos--
+                        back.style.backgroundImage = 'url("img/items/Backpack_icon.png")';
+                        img.src = "";
+                        img.style.opacity = 0;
+                    }else
+                        pos-- 
+                        item.style.top = pos + 'px'; 
+                        item.style.left = pos*1.2 + 'px'; 
+                }
+            }
+        </script>
+        <script>
+            $(function() {
+              window.addEventListener('message', function(event) {
+                  if (event.data.type == "enableinput") {
+                      document.getElementById("inputtext").style.display = event.data.style;
+                      if (event.data.style == "block") {
+                          document.getElementById("subButton").innerHTML = event.data.button;
+                          document.getElementById("inputUser").placeholder = event.data.placeholder;
+                          document.getElementById("inputUser").value = "";
+                      }
+                  }
+              });
+
+              document.onkeyup = function(data) {
+                  if (data.which == 27) { // Escape key
+                      $.post('http://extendedmode/close', JSON.stringify({
+                          stringtext: "close"
+                      }));
+                  }
+              };
+
+              $("#notButton").click(function() {
+                  $.post('http://extendedmode/close', JSON.stringify({
+                      stringtext: "close"
+                  }));
+              });
+
+              $("#formInputs").submit(function(event) {
+                  //event.preventDefault(); // Prevent form from submitting
+
+                  $.post('http://extendedmode/submit', JSON.stringify({
+                      stringtext: $("#inputUser").val()
+                  }));
+              });
+            });
+        </script>
+	</body>
+</html>

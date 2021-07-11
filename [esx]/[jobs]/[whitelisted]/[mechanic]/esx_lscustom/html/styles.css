@@ -1,0 +1,60 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	display: none;
+	font-family: 'Signika', sans-serif;
+	user-select: none;
+	text-transform: uppercase;
+}
+
+#mainContainer{	
+	width: 23.2%;
+	height: 26.7%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	position: absolute;
+	bottom: 1%;
+	right: 2%;
+}
+
+#mainHeader{	
+	width: 100%;
+	height: 15%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	border-radius: 20px 20px 0px 0px;
+	background-color: rgba(17, 5, 60, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16pt;
+}
+
+.row{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3.2%;
+	box-sizing: border-box;
+	font-size: 17pt;
+}
+
+.bb2l{
+	border-bottom: 2px solid lightgrey;
+}
+
+.bigTXT{
+	font-size: 21pt;
+	font-weight: bold;
+}

@@ -1,0 +1,250 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	color: white;
+	font-family: 'Signika', sans-serif;
+	opacity: 0;
+	user-select: none;
+	text-transform: uppercase;
+}
+
+#mainContainer{
+	width: 70%;
+	height: 45%;
+}
+
+#jobContainer{
+	width: 79%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.2);
+	margin-left: 0.5%;
+	float: left;
+}
+
+#arrowl{
+	width: 10%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(10, 15, 60, 0.5);
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 60pt;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+#arrowr{
+	width: 10%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(10, 15, 60, 0.5);
+	float: left;
+	margin-left: 0.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 60pt;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+#arrowr:hover{
+	background-color: rgba(10, 15, 60, 0.8);
+}
+
+#arrowl:hover{
+	background-color: rgba(10, 15, 60, 0.8);
+}
+
+#jobImage{
+	float: left;
+	width: 43%;
+	height: 98%;
+	margin-left: 0.5%;
+	margin-top: 0.4%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 17px;
+	background-size: cover;
+	background-position: center top;
+	background-color: rgba(10, 15, 60, 0.2);
+}
+
+#jobInfo{
+	width: 55.75%;
+	float: left;
+	height: 75%;
+	margin-left: 0.35%;
+	margin-top: 0.4%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 17px;
+	background-color: rgba(17, 5, 17, 0.4);
+}
+
+#jobTitle{
+	width: 100%;
+	float: left;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2.3em;
+	color: white;
+	text-transform: uppercase;
+}
+
+#jobText{
+	width: 100%;
+	height: 28%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
+	text-align: center;
+	font-size: 1.2em;
+	padding-left: 2%;
+	padding-right: 2%;
+	color: white;
+}
+
+#requeriments{
+	width: 100%;
+	height: 42%;
+	float: left;
+}
+
+#mandatory{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#optional{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.reqHeader{
+	width: 100%;
+	height: 20%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-weight: bold;
+}
+
+#reqCont{
+	width: 96%;
+	height: 60%;
+	margin-top: 4%;
+	margin-left: 2%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	background-color: rgba(17, 5, 17, 0.4);
+}
+
+.requerimentImg{
+	width: 30%;
+	height: 93%;
+	margin-top: 1%;
+	margin-left: 1%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 10px;
+	float: left;
+	background-color: rgba(17, 5, 90, 0.4);
+}
+
+#optCont{
+	width: 96%;
+	height: 60%;
+	margin-top: 4%;
+	margin-left: 2%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	background-color: rgba(17, 5, 17, 0.4);
+}
+
+#controlPanel{
+	width: 55.75%;
+	float: left;
+	height: 22.1%;
+	margin-left: 0.35%;
+	margin-top: 0.4%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 17px;
+	background-color: rgba(17, 5, 17, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#submit{
+	width: 35%;
+	height: 40%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(10, 95, 10, 0.4);
+	text-align: center;
+	margin-right: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+}
+
+#cancel{
+	width: 30%;
+	height: 40%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(90, 15, 10, 0.4);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+}
+
+#cancel:hover{
+	background-color: rgba(150, 15, 10, 0.8);
+}
+
+#submit:hover{
+	background-color: rgba(10, 95, 10, 0.8);
+}

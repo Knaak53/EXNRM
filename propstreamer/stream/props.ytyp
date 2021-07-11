@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapTypes>
+  <extensions/>
+  <archetypes>
+
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="500.0"/>
+      <flags value="32"/>
+      <specialAttribute value="0"/>
+      <bbMin x="0.0" y="0.0" z="0.0"/>
+      <bbMax x="0.0" y="0.0" z="0.0"/>
+      <bsCentre x="0.0" y="0.0" z="0.0"/>
+      <bsRadius value="0.0"/>
+      <hdTextureDist value="5.0"/>
+      <name>cs1_15b_convo_01</name>
+      <textureDictionary>cs1_15b_convo_01</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_cs1_15b_convo_01</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>cs1_15b_convo_01</assetName>
+      <extensions/>
+    </Item>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="500.0"/>
+      <flags value="537067552"/>
+      <specialAttribute value="0"/>
+      <bbMin x="0.0" y="0.0" z="0.0"/>
+      <bbMax x="0.0" y="0.0" z="0.0"/>
+      <bsCentre x="0.0" y="0.0" z="0.0"/>
+      <bsRadius value="0.0"/>
+      <hdTextureDist value="5.0"/>
+      <name>prop_tree_olive_cr2_test</name>
+      <textureDictionary>prop_tree_olive_cr2_test</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_prop_tree_olive_cr2_test</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_tree_olive_cr2_test</assetName>
+      <extensions/>
+    </Item>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="500.0"/>
+      <flags value="537067552"/>
+      <specialAttribute value="0"/>
+      <bbMin x="0.0" y="0.0" z="0.0"/>
+      <bbMax x="0.0" y="0.0" z="0.0"/>
+      <bsCentre x="0.0" y="0.0" z="0.0"/>
+      <bsRadius value="0.0"/>
+      <hdTextureDist value="5.0"/>
+      <name>prop_ld_stretcher_test</name>
+      <textureDictionary>prop_ld_stretcher_test</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_prop_ld_stretcher_test</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_ld_stretcher_test</assetName>
+      <extensions/>
+    </Item>
+	<Item type="CBaseArchetypeDef">
+      <lodDist value="500.0"/>
+      <flags value="537067552"/>
+      <specialAttribute value="0"/>
+      <bbMin x="0.0" y="0.0" z="0.0"/>
+      <bbMax x="0.0" y="0.0" z="0.0"/>
+      <bsCentre x="0.0" y="0.0" z="0.0"/>
+      <bsRadius value="0.0"/>
+      <hdTextureDist value="5.0"/>
+      <name>prop_ld_stret_test</name>
+      <textureDictionary>prop_ld_stret_test</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_prop_ld_stret_test</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_ld_stret_test</assetName>
+      <extensions/>
+    </Item>
+  </archetypes>
+  <name>props</name>
+  <dependencies/>
+  <compositeEntityTypes/>
+</CMapTypes>

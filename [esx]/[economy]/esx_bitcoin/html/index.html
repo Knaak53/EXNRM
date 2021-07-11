@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title></title>
+	  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="jquery.qrcode.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="app.js"></script>
+    <div id="close">x</div>
+    <div id="mainContainer">
+      <div id="leftSide">
+        <div id="exchangeHeader">Caronte Criptocurrency Exchange</div>
+        <div id="graphicsContainer">
+            <!--<div id="invisibleHeader"></div>
+            <div style="height: 130%; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 2px solid lightgrey; border-radius: 12px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1506" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Caronte trading view (COINLIB)</div></div>-->
+        </div> 
+      </div>
+      <div id="mainMenuContainer">
+          <div id="walletContainer">
+            <div id="walletHeader">Cartera de bitcoin</div>
+            <div id="walletInfo">
+              <div id="walletImg"></div>
+              <div id="wallet">
+                <div id="walletBTC" class="walletCount">BTC: 0.57893876</div>
+                <div id="walletEUR" class="walletCount"></div>
+                <div id="walletPercentage" class="walletCount" style="color: green;"></div>
+              </div>
+            </div>
+          </div>
+          <div id="actionsContainer">
+            <div id="buy" class="action" style="background-image: url(img/buy.png);">Comprar/vender</div>
+            <div id="send" class="action" style="background-image: url(img/send.png);">enviar</div>
+            <div id="recive" class="action" style="background-image: url(img/recive.png);">recibir</div>
+          </div>
+          <div id="currentActionContainer">
+            <div id="buyAction" class="actionContainer">
+              <div id="buyWarning" class="actionWarning"></div>
+              <div id="buyAndSellContainer">
+                <div id="buyContainer">
+                  <div id="buyHeader" class="buyAndSellHeader">Comprar/vender</div>
+                  <div id="buyBTCCount" class="inputRow">
+                    <div id="labelBTC">BTC:</div><div class="inputContainer"><input type="number" id="btcInput" name="btcInput" min="0" placeholder="BTC"></div>
+                  </div>
+                  <div id="buyEURCount" class="inputRow">
+                    <div id="labelBTC">eur:</div><div class="inputContainer"><input type="number" id="eurInput" name="eurInput" min="0" placeholder="€"></div>
+                  </div>
+                  <div id="buyButtons" class="buttonsRow">
+                    <div id="buyButton" class="button">comprar</div>
+                    <div id="sellButton" class="button">vender</div>
+                  </div>
+                  <div id="sendButtons" class="buttonsRow">
+                    <input type="text" id="btcAccount" name="btcAccount" placeholder="DIRECCION BTC">
+                    <div id="sendButton" class="button">enviar</div>
+                  </div>
+                </div>
+              </div>
+              <div id="reciveContainer">
+                <div id="selfAccountContainer"></div>
+                <div id="qrContainer"><div id="qrInfo">Copia tu direccion BTC para enviarla a tus contactos o escanea el codigo qr con tu telefono.</div><div id="qr"></div></div>             
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <!-- JS Scripts -->
+        <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+        
+        <script>
+            console.log("zoy ehpeciah");
+        </script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <img id="cursorPointer" src="assets/cursor.png">
+        <a class="crosshair" href="#"></a>
+        <ul class="menu menu-user">
+            <li><a class="DarDinero" href=""><span class="emoji">💲</span>Dar Dinero</a></li>
+            <li><a class="Reacciones" id="hug" href=""><span class="emoji">👋</span>Reaccionar</a></li>
+            <li><a class="AnimacionSync" id="hug" href=""><span class="emoji">👋</span>Interaccionar</a></li>
+            <li><a class="submenu job police" id="policeinteraction" href=""><span class="emoji">👮</span><span class="text">Acciones Policia</span></a></li>
+        </ul>
+        <ul class="menu menu-smell">
+            <li><a class="reaccionar" id="smell" href=""><span class="emoji">💩</span>Huele raro...</a></li>
+        </ul>
+        <ul class="menu menu-stink">
+            <li><a class="reaccionar" id="stink" href=""><span class="emoji">💩</span>¡Qué mal huele!</a></li>
+        </ul>
+        <ul class="menu menu-car">
+            <li><a class="vehiclecontrol control" id="lock" href=""><span class="emoji">🔒</span><span class="text">Bloquear/Desbloquear</span></a></li>
+            <li><a class="vehiclecontrol control" id="hood" href=""><span class="emoji">🚘</span><span class="text">Abrir el capó</span></a></li>
+            <li><a class="vehiclecontrol control" id="trunk" href=""><span class="emoji">🚗</span><span class="text">Abrir maletero</span></a></li>
+            <!--li><a class="[PUT FUNCTION RIGHT HERE]" href=""><span class="emoji">🚿</span><span class="text">Nettoyer</span></a></li-->
+            
+            <li><a class="vehiclecontrol doors" id="near" href=""><span class="emoji">🔑</span><span class="text">Abrir puerta</span></a></li>
+            <li><a class="empujar" href=""><span class="emoji">⬆️</span><span class="text">Empujar vehiculo</span></a></li>
+            <!--li><a class="[PUT FUNCTION RIGHT HERE]" href=""><span class="emoji">📎</span><span class="text">Carjacker</span></a></li-->
+            <!--li><a class="[PUT FUNCTION RIGHT HERE]" href=""><span class="emoji">🔧</span><span class="text">Réparer le moteur</span></a></li-->
+        </ul>
+
+        <ul class="menu menu-solo">
+            <li><a class="hud" id="hudmenusolo" href=""><span class="emoji">🖥️</span><span class="text">Opciones del HUD</span></a></li>
+            <li><a class="Reacciones" id="hug" href=""><span class="emoji">👋</span>Animaciones</a></li>
+            <li><a class="Reaccionesb" id="Reaccionesb" href=""><span class="emoji">👋</span>Animaciones Con objeto</a></li>
+            <li><a class="Reaccionesc" id="Reaccionesc" href=""><span class="emoji">👋</span>Bailes</a></li>
+            <li><a class="Documentos" id="Documentos" href=""><span class="emoji">📄</span>Documentos</a></li>
+        <!--li> add collectables. kaos 05/09 </li-->
+        <li>  <a class="collectables" id="collectables" href=""><span class="emoji">🗺️</span>Coleccionables</a></li>  
+        </ul>
+        <ul class="menu menu-solocar">
+            <li><a class="vehiclecontrol control" id="lock" href=""><span class="emoji">🔒</span><span class="text">Bloquear/Desbloquear</span></a></li>
+            <li><a class="vehiclecontrol control" id="save" href=""><span class="emoji">🛰️</span><span class="text">Mantener localizado</span></a></li>
+            <!--li><a class="[PUT FUNCTION RIGHT HERE]" href=""><span class="emoji">🚿</span><span class="text">Nettoyer</span></a></li-->
+            <li><a class="vehiclecontrol control" id="engine" href=""><span class="emoji">⚿</span><span class="text">Encender/Apagar motor</span></a></li>
+            <li><a class="frenoDeMano" href=""><span class="emoji">⛍</span><span class="text">Poner/Quitar freno de mano</span></a></li>
+            <li><a class="hud" id="hudmenucar" href=""><span class="emoji">🖥️</span><span class="text">Opciones del HUD</span></a></li>
+            <li><a class="submenu" id="puertas" href=""><span class="emoji">🔑</span><span class="text">Puertas</span></a></li>
+            <li><a class="submenu job police" id="intoPoliceCar" href=""><span class="emoji">👮</span><span class="text">Vehiculos Policia</span></a></li>
+        </ul>
+      
+        <ul class="menu menu-hud solo">
+            <li><a class="menuhud" id="cartool" href=""><span class="emoji">🖥️</span><span class="text">Ocultar hud del vehiculo</span></a></li>
+            <li><a class="menuhud" id="balance" href=""><span class="emoji">🖥️</span><span class="text">Ocultar hud de estados</span></a></li>
+            <li><a class="menuhud" id="hungerbalance" href=""><span class="emoji">🖥️</span><span class="text">Modo cinematica</span></a></li>
+            <li><a class="menuhud" id="mochila" href=""><span class="emoji">🖥️</span><span class="text">Ocultar mochila</span></a></li>
+            <!--li><a class="menuhud" id="minimap" href=""><span class="emoji">🖥️</span><span class="text">Ocultar minimapa</span></a></li-->
+            <li><a class="menuhud" id="all" href=""><span class="emoji">🖥️</span><span class="text">Ocultar todo</span></a></li>
+            <li><a class="menuhud" id="jobscounter" href=""><span class="emoji">🖥️</span><span class="text">Ocultar Contador Jobs</span></a></li>
+        </ul>
+
+        <ul class="menu menu-interacciones">
+          <li><a class="sincronizado dp" id="bro" href=""><span class="emoji">👋</span>Saludo de hermano</a></li>
+          <li><a class="sincronizado dp" id="hug" href=""><span class="emoji">🤗</span>Abrazo cariñoso</a></li>
+          <li><a class="sincronizado dp" id="punch" href=""><span class="emoji">👊🏿</span>Dar puñetazo</a></li>
+          <li><a class="sincronizado dp" id="slap" href=""><span class="emoji">✊🏾</span>Dar tortazo</a></li>
+          <li><a class="sincronizado dp" id="stickup" href=""><span class="emoji">🔫</span>Amenazar con pistola</a></li>
+          <li><a class="sincronizado dp" id="baseball" href=""><span class="emoji">⚾</span>¡Wow colega!</a></li>
+          <li><a class="sincronizado dp" id="give" href=""><span class="emoji">🗳️</span>Dar objeto</a></li>
+          <li><a class="sincronizado dp" id="handshake" href=""><span class="emoji">👊🏻</span>Saludo de pandillero</a></li>
+          <li><a class="sincronizado dp" id="headbutt" href=""><span class="emoji">😡</span>Dar cabezazo</a></li>
+          <li><a class="sincronizado piggyback" id="piggyback" href=""><span class="emoji">🏇</span>Coger a caballito</a></li>
+          <li><a class="sincronizado carry" id="carry" href=""><span class="emoji">💀</span>Cargar cuerpo</a></li>
+        </ul>
+        <ul class="menu menu-reacciones solo">
+            <li><a class="submenu" id="gracioso" href=""><span class="emoji">😜</span>Imitaciones</a></li>
+            <li><a class="submenu" id="wait" href=""><span class="emoji">🐤</span>Esperar</a></li>
+            <li><a class="submenu" id="ofensivas" href=""><span class="emoji">😡</span>Ofensivas</a></li>
+            <!-- Add Kaos-->
+            <li><a class="submenu" id="saludos" href=""><span class="emoji">👋</span>Saludos</a></li> 
+            <!--<li><a class="submenu" id="objetos" href=""><span class="emoji">📝</span>Animaciones con objetos</a></li>     cambio a menu principal-->        
+           <!-- <li><a class="submenu" id="celebraciones" href=""><span class="emoji">👋</span>celebraciones</a></li> -->
+            <li><a class="submenu" id="sentarse" href=""><span class="emoji">🪑</span>Sentarse o tumbarse</a></li>
+            <!--<li><a class="submenu" id="ropa" href=""><span class="emoji">👋</span>ropa</a></li> -->
+            <li><a class="submenu" id="negaciones" href=""><span class="emoji">🤦🏻‍♂️</span>Negaciones</a></li>
+            <!--<li><a class="submenu" id="besos" href=""><span class="emoji">👋</span>besos</a></li>
+            <li><a class="submenu" id="payaso" href=""><span class="emoji">👋</span>payaso</a></li>
+            <li><a class="submenu" id="crucebrazos" href=""><span class="emoji">👋</span>crucebrazos</a></li>
+            <li><a class="submenu" id="animo" href=""><span class="emoji">👋</span>animo</a></li>-->
+            <li><a class="submenu" id="deporte" href=""><span class="emoji">⛹️</span>deporte</a></li>            
+            <!--<li><a class="submenu" id="bronca" href=""><span class="emoji">👋</span>bronca</a></li>
+            <li><a class="submenu" id="barra" href=""><span class="emoji">👋</span>barra</a></li>
+            <li><a class="submenu" id="meditacion" href=""><span class="emoji">👋</span>meditacion</a></li>
+            <li><a class="submenu" id="necesidades" href=""><span class="emoji">👋</span>necesidades</a></li>
+            <li><a class="submenu" id="estatua" href=""><span class="emoji">👋</span>estatua</a></li>
+            <li><a class="submenu" id="bailes" href=""><span class="emoji">👋</span>bailes</a></li>
+            
+        --><li><a class="submenu" id="trabajos" href=""><span class="emoji">💼</span>Trabajos</a></li>
+
+        </ul>
+        <ul class="menu menu-reaccionesb solo">
+            <li><a class="submenu" id="objetos" href=""><span class="emoji">📦</span>Objetos</a></li>
+            <li><a class="submenu" id="vicios" href=""><span class="emoji">💉</span>Vicios</a></li>
+        </ul>
+        <ul class="menu menu-reaccionesc solo">
+            <li><a class="submenu" id="graciosos" href=""><span class="emoji">🤡</span>Graciosos</a></li>
+            <li><a class="submenu" id="dance" href=""><span class="emoji">🕺</span>Bailes</a></li>
+            
+            
+        </ul>
+       <ul class="menu submenu-vicios solo">
+            <li><a class="reaccionar" id="champagnespray" href=""><span class="emoji">🍾</span>Botella de champagne</a></li>
+            <li><a class="reaccionar" id="champagne" href=""><span class="emoji">🥂</span>Copa de champagne</a></li>
+            <li><a class="reaccionar" id="wine" href=""><span class="emoji">🍷</span>Copa de vino</a></li>
+            <li><a class="reaccionar" id="whiskey" href=""><span class="emoji">🥃</span>Copa de whiskey</a></li>
+            <li><a class="reaccionar" id="soda" href=""><span class="emoji">🥤</span>Lata de cocacola</a></li>
+            <li><a class="reaccionar" id="cig" href=""><span class="emoji">🚬</span>Cigarro</a></li>
+            <li><a class="reaccionar" id="cigar2" href=""><span class="emoji">🚬</span>Puro</a></li>
+            <li><a class="reaccionar" id="coffee" href=""><span class="emoji">☕</span>Cafe</a></li>
+            <li><a class="reaccionar" id="joint" href=""><span class="emoji">🥦</span>Porro</a></li>
+            <li><a class="reaccionar" id="smoke2" href=""><span class="emoji">🚬</span>Fumar cigarro 1</a></li> 
+            <li><a class="reaccionar" id="smoke3" href=""><span class="emoji">🚬</span>Fumar cigarro 2</a></li>
+            <li><a class="reaccionar" id="smoke4" href=""><span class="emoji">🚬</span>Fumar cigarro 3</a></li>
+
+        </ul>
+        <ul class="menu submenu-graciosos solo">           
+            <li><a class="reaccionar" id="danceshy" href=""><span class="emoji">💃🏿</span>Baile soso</a></li>
+            <li><a class="reaccionar" id="danceshy2" href=""><span class="emoji">💃🏿</span>Bile soso 2</a></li>
+            <li><a class="reaccionar" id="dancesilly" href=""><span class="emoji">👯</span>Baile gracioso 1</a></li> 
+            <li><a class="reaccionar" id="dancesilly2" href=""><span class="emoji">👯</span>Baile gracioso 2</a></li>
+            <li><a class="reaccionar" id="dancesilly3" href=""><span class="emoji">👯</span>Baile gracioso 3</a></li>
+            <li><a class="reaccionar" id="dancesilly4" href=""><span class="emoji">👯</span>Baile gracioso 4</a></li>
+            <li><a class="reaccionar" id="dancesilly5" href=""><span class="emoji">👯</span>Baile gracioso 5</a></li>
+            <li><a class="reaccionar" id="dancesilly6" href=""><span class="emoji">👯</span>Baile gracioso 6</a></li> 
+            <li><a class="reaccionar" id="dancesilly7" href=""><span class="emoji">👯</span>Baile gracioso 7</a></li>
+            <li><a class="reaccionar" id="dancesilly8" href=""><span class="emoji">👯</span>Baile gracioso 8</a></li>
+            <li><a class="reaccionar" id="dancesilly9" href=""><span class="emoji">👯</span>Baile gracioso 9</a></li>
+            <li><a class="reaccionar" id="dancehorse" href=""><span class="emoji">🦄</span>Baile con caballito 1</a></li>
+            <li><a class="reaccionar" id="dancehorse2" href=""><span class="emoji">🦄</span>Baile con caballito 2</a></li> 
+            <li><a class="reaccionar" id="dancehorse3" href=""><span class="emoji">🦄</span>Baile con caballito 3</a></li>
+            <li><a class="reaccionar" id="danceglowstick" href=""><span class="emoji">🧨</span>Baile con caballito 3</a></li>
+            <li><a class="reaccionar" id="danceglowstick2" href=""><span class="emoji">🧨</span>Baile con caballito 3</a></li>
+            <li><a class="reaccionar" id="danceglowstick3" href=""><span class="emoji">🧨</span>Baile con caballito 3</a></li>
+        </ul>
+        <ul class="menu submenu-dance solo">
+            <li><a class="reaccionar" id="dance5" href=""><span class="emoji">🕺🏿</span>Baile chorra</a></li>
+            <li><a class="reaccionar" id="dance6" href=""><span class="emoji">🕺🏿</span>Locomia 1</a></li>
+            <li><a class="reaccionar" id="dance7" href=""><span class="emoji">🕺🏿</span>Locomia 2</a></li>
+            <li><a class="reaccionar" id="dance8" href=""><span class="emoji">🕺🏿</span>Baila con flow</a></li> 
+            <li><a class="reaccionar" id="dance9" href=""><span class="emoji">🕺🏿</span>Me rompì!!</a></li>           
+            <li><a class="reaccionar" id="dance" href=""><span class="emoji">🕺</span>Dance 1</a></li>
+            <li><a class="reaccionar" id="dance2" href=""><span class="emoji">🕺</span>Dance 2</a></li>
+            <li><a class="reaccionar" id="dance3" href=""><span class="emoji">🕺</span>Dance 3</a></li> 
+            <li><a class="reaccionar" id="dance4" href=""><span class="emoji">🕺</span>Dance 4</a></li>
+            <li><a class="reaccionar" id="danceupper" href=""><span class="emoji">🕺</span>Dance 5</a></li> 
+            <li><a class="reaccionar" id="danceupper2" href=""><span class="emoji">🕺</span>Dance 6</a></li>
+            <li><a class="reaccionar" id="dancef" href=""><span class="emoji">💃</span>Baile 1</a></li>
+            <li><a class="reaccionar" id="dancef2" href=""><span class="emoji">💃</span>Baile 2</a></li>
+            <li><a class="reaccionar" id="dancef3" href=""><span class="emoji">💃</span>Baile 3</a></li>
+            <li><a class="reaccionar" id="dancef4" href=""><span class="emoji">💃</span>Baile 4</a></li> 
+            <li><a class="reaccionar" id="dancef5" href=""><span class="emoji">💃</span>Baile 5</a></li>
+            <li><a class="reaccionar" id="dancef6" href=""><span class="emoji">💃</span>Baile 6</a></li>
+        </ul>
+        <ul class="menu submenu-wait solo">
+            <li><a class="reaccionar" id="wait" href=""><span class="emoji">👮</span>Esperar (Policia)</a></li>
+            <li><a class="reaccionar" id="wait2" href=""><span class="emoji">🛡️</span>Esperar (Guardaespaldas))</a></li>
+            <li><a class="reaccionar" id="wait3" href=""><span class="emoji">👧🏼</span>Esperar (Estilo femenino))</a></li>
+            <li><a class="reaccionar" id="wait4" href=""><span class="emoji">👧🏼</span>Esperar (Estilo femenino 2))</a></li>
+            <li><a class="reaccionar" id="wait7" href=""><span class="emoji">👮</span>Esperar (Policia una mano)</a></li>
+            <li><a class="reaccionar" id="wait8" href=""><span class="emoji">👮</span>Esperar (Policia observador)</a></li>
+            <li><a class="reaccionar" id="wait11" href=""><span class="emoji">🐤</span>Esperar (Gallina Style)</a></li>
+            <li><a class="reaccionar" id="lean" href=""><span class="emoji">🧱</span>Apoyado en pared (Completo)</a></li>
+            <li><a class="reaccionar" id="lean2" href=""><span class="emoji">🧱</span>Apoyado en pared (Rápida)</a></li>
+            <li><a class="reaccionar" id="lean3" href=""><span class="emoji">🧱</span>Apoyado en pared (Pensativ@) </a></li>
+            <li><a class="reaccionar" id="lean4" href=""><span class="emoji">🧱</span>Apoyado en pared (Pandiller@)</a></li>
+
+            <li><a class="reaccionar" id="crossarms" href=""><span class="emoji">🙌</span>Cruzar Brazos 1</a></li>
+            <li><a class="reaccionar" id="crossarms2" href=""><span class="emoji">🙌</span>Cruzar Brazos 2</a></li>
+            <li><a class="reaccionar" id="crossarms3" href=""><span class="emoji">🙌</span>Cruzar Brazos 3</a></li>
+            <li><a class="reaccionar" id="crossarms4" href=""><span class="emoji">🙌</span>Cruzar Brazos 4</a></li>
+            <li><a class="reaccionar" id="crossarms5" href=""><span class="emoji">🙌</span>Cruzar Brazos 5</a></li>
+            <li><a class="reaccionar" id="crossarms6" href=""><span class="emoji">🙌</span>Cruzar brazos y gesto</a></li>
+            <li><a class="reaccionar" id="crossarmsside" href=""><span class="emoji">🙌</span>Cruzar brazos dormido</a></li>
+            <li><a class="reaccionar" id="guard" href=""><span class="emoji">🛡️</span>Segurata</a></li>
+        </ul>
+        <ul class="menu submenu-gracioso solo">
+            <li><a class="reaccionar" id="airplane" href=""><span class="emoji">🛩️</span>Avion</a></li>
+            <li><a class="reaccionar" id="bird" href=""><span class="emoji">🐦</span>Pajaro</a></li>
+            <li><a class="reaccionar" id="chiken" href=""><span class="emoji">🐓</span>Gallina</a></li>
+            <li><a class="reaccionar" id="crawl" href=""><span class="emoji">😵</span>Arrastrarse</a></li>
+            <li><a class="reaccionar" id="dj" href=""><span class="emoji">🎧</span>DeeJay</a></li>
+            <li><a class="reaccionar" id="bark" href=""><span class="emoji">🐕</span>Perro</a></li>
+            <li><a class="reaccionar" id="fishdance" href=""><span class="emoji">🐠</span>Baile del pez</a></li>
+            <li><a class="reaccionar" id="rabbit" href=""><span class="emoji">🐇</span>Conejo</a></li>
+            <li><a class="reaccionar" id="golfswing" href=""><span class="emoji">🏌️‍♂️</span>Golf</a></li>
+            
+           
+           
+        </ul>
+        <ul class="menu submenu-ofensivas solo">
+            <li><a class="reaccionar" id="flipoff" href=""><span class="emoji">🖕🏾</span>Jodeos</a></li>
+            <li><a class="reaccionar" id="flipoff2" href=""><span class="emoji">🖕🏽</span>Jodete</a></li>
+            <!-- Add Kaos-->
+            <li><a class="reaccionar" id="finger" href=""><span class="emoji">🖕🏼</span>peineta</a></li>
+            <li><a class="reaccionar" id="finger2" href=""><span class="emoji">🖕🏻</span>Peineta doble</a></li>
+            <li><a class="reaccionar" id="screwyou" href=""><span class="emoji">🖕</span>Que te jodan!</a></li>
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+            <li><a class="reaccionar" id="boxing2" href=""><span class="emoji">🥊</span>Boxeo2</a></li>
+            <li><a class="reaccionar" id="comeatmebro" href=""><span class="emoji">💪</span>Golpe de pecho</a></li>
+            <li><a class="reaccionar" id="cutthroat" href=""><span class="emoji">🔪</span>!Te rajo...!</a></li>
+            <li><a class="reaccionar" id="cutthroat2" href=""><span class="emoji">🔪</span>!Te rajo lentamente...!</a></li>
+            <li><a class="reaccionar" id="fightme" href=""><span class="emoji">🏋️‍♂️</span>Modo pelea</a></li>
+            <li><a class="reaccionar" id="fightme2" href=""><span class="emoji">🏋️‍♀️</span>Buscas pelea?</a></li>         
+            <li><a class="reaccionar" id="headbutt" href=""><span class="emoji">😣</span>Cabezazo</a></li>
+            <li><a class="reaccionar" id="knucklecrunch" href=""><span class="emoji">👊</span>Apretando puños</a></li>
+            <li><a class="reaccionar" id="punching" href=""><span class="emoji">👊🏿</span>!punching!</a></li>            
+            <li><a class="reaccionar" id="slap" href=""><span class="emoji">✊🏾</span>!slap!</a></li>
+        </ul>
+        
+        <ul class="menu submenu-saludos solo"> 
+            <li><a class="reaccionar" id="jazzhands" href=""><span class="emoji">🕺</span>¡Que paasaaaaa!</a></li>
+            <li><a class="reaccionar" id="bringiton" href=""><span class="emoji">🤷‍♂️</span>Que pasa!</a></li>
+            <li><a class="reaccionar" id="metal" href=""><span class="emoji">🤘</span>Viva el metal!</a></li>
+            <li><a class="reaccionar" id="namaste" href=""><span class="emoji">🙏</span>Namaste</a></li>
+            <li><a class="reaccionar" id="peace" href=""><span class="emoji">✌🏻</span>Paz amigo</a></li>
+            <li><a class="reaccionar" id="peace2" href=""><span class="emoji">✌🏾</span>Paz hermano</a></li>
+            <li><a class="reaccionar" id="salute" href=""><span class="emoji">✋</span>Cuadrarse der</a></li>
+            <li><a class="reaccionar" id="salute2" href=""><span class="emoji">✋🏻</span>Cuadrarse izq</a></li>
+            <li><a class="reaccionar" id="thumbsup" href=""><span class="emoji">👌</span>Okey doble</a></li>
+            <li><a class="reaccionar" id="thumbsup2" href=""><span class="emoji">👍</span>Okey</a></li>
+            <li><a class="reaccionar" id="wave6" href=""><span class="emoji">👇</span>Aqui!Aqui!</a></li>
+            <li><a class="reaccionar" id="wave5" href=""><span class="emoji">👋🏼</span>Hey! Aqui!</a></li>
+            <li><a class="reaccionar" id="wave8" href=""><span class="emoji">👋</span>Yepa!</a></li>
+            <li><a class="reaccionar" id="wave" href=""><span class="emoji">👋🏻</span>Hola,hola!</a></li>
+        </ul>
+        <ul class="menu submenu-objetos solo">
+            <li><a class="reaccionar" id="notepad2" href=""><span class="emoji">📝</span>Coger notas</a></li>
+            <li><a class="reaccionar" id="clipboard2" href=""><span class="emoji">📓</span>Revisar notas</a></li>
+            <li><a class="reaccionar" id="weld" href=""><span class="emoji">🎆</span>Soldar</a></li>
+            <li><a class="reaccionar" id="hammer" href=""><span class="emoji">🔨</span>Martillo</a></li>
+            <li><a class="reaccionar" id="janitor" href=""><span class="emoji">🚯</span>Escobon</a></li>
+            <li><a class="reaccionar" id="leafblower" href=""><span class="emoji">🍂</span>Soplador</a></li>
+            <li><a class="reaccionar" id="musician" href=""><span class="emoji">🥁</span>Timbales</a></li>
+            <li><a class="reaccionar" id="party" href=""><span class="emoji">🍺</span>Cerveza</a></li>  
+            <li><a class="reaccionar" id="copbeacon" href=""><span class="emoji">👮</span>Dirigir trafico</a></li> 
+        </ul>
+        <!--<ul class="menu submenu-celebraciones">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-tumbarse">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>--> 
+        <ul class="menu submenu-sentarse solo">
+            <li><a class="submenu" id="sentarsea" href=""><span class="emoji">🪑</span>Sentarse en silla</a></li>
+            <li><a class="submenu" id="sentarseb" href=""><span class="emoji">🦧</span>Sentarse en suelo</a></li>
+            <li><a class="submenu" id="sentarsec" href=""><span class="emoji">🛏️</span>Tumbarse</a></li>
+            <li><a class="submenu" id="sentarsed" href=""><span class="emoji">🧘🏽</span>Meditacion</a></li>
+        </ul>
+        <ul class="menu submenu-sentarsea solo">
+            <li><a class="reaccionar" id="sitchair" href=""><span class="emoji">💺</span>Sentarse</a></li>
+            <li><a class="reaccionar" id="sitchair2" href=""><span class="emoji">💺</span>Pierna anchas</a></li>
+            <li><a class="reaccionar" id="sitchair3" href=""><span class="emoji">💺</span>Piernas cruzadas</a></li>
+            <li><a class="reaccionar" id="sitchair4" href=""><span class="emoji">💺</span>Apoyado en rodillas</a></li> 
+            <li><a class="reaccionar" id="sitchair5" href=""><span class="emoji">💺</span>Las dos piernas arriba</a></li>
+            <li><a class="reaccionar" id="sitchair6" href=""><span class="emoji">💺</span>Sentado en banco</a></li>           
+        </ul>
+        <ul class="menu submenu-sentarseb solo">
+            <li><a class="reaccionar" id="sit" href=""><span class="emoji">⛱️</span>Apollado en rodillas </a></li>
+            <li><a class="reaccionar" id="sit2" href=""><span class="emoji">⛱️</span>Apollado en pared</a></li>
+            <li><a class="reaccionar" id="sit3" href=""><span class="emoji">⛱️</span>Piernas estiradas</a></li>
+            <li><a class="reaccionar" id="sit4" href=""><span class="emoji">⛱️</span>Piernas cruzadas</a></li> 
+            <li><a class="reaccionar" id="sit7" href=""><span class="emoji">😭</span>Llorando</a></li>
+            <li><a class="reaccionar" id="sitsad" href=""><span class="emoji">😔</span>Triste</a></li>
+            <li><a class="reaccionar" id="sitscared2" href=""><span class="emoji">😨</span>Asustad@</a></li>          
+        </ul>
+        <ul class="menu submenu-sentarsec solo">
+            <li><a class="reaccionar" id="cloudgaze" href=""><span class="emoji">⛱️</span>Tumbarse 1</a></li>
+            <li><a class="reaccionar" id="cloudgaze2" href=""><span class="emoji">⛱️</span>Tumbarse 2</a></li> 
+            <li><a class="reaccionar" id="passout" href=""><span class="emoji">👮</span>Boca abajo</a></li>
+            <li><a class="reaccionar" id="passout2" href=""><span class="emoji">👮</span>Boca arriba</a></li>
+            <li><a class="reaccionar" id="chill" href=""><span class="emoji">👮</span>Tumbarse Chill</a></li>
+            <li><a class="reaccionar" id="sleep" href=""><span class="emoji">🛌</span>Dormir</a></li> 
+            <li><a class="reaccionar" id="bumsleep" href=""><span class="emoji">🛌</span>Dormir de lado</a></li>
+            <li><a class="reaccionar" id="passout3" href=""><span class="emoji">👮</span>Velatorio</a></li>
+            <li><a class="reaccionar" id="sunbathe" href=""><span class="emoji">⛱️</span>Tomar sol</a></li> 
+            <li><a class="reaccionar" id="sunbathe2" href=""><span class="emoji">⛱️</span>Tomar sol 2</a></li>
+            <li><a class="reaccionar" id="sunbathe3" href=""><span class="emoji">⛱️</span>Tomar sol boca abajo</a></li>           
+        </ul>
+        <ul class="menu submenu-sentarsed solo">
+            <li><a class="reaccionar" id="meditate" href=""><span class="emoji">🧘🏻</span>Meditacion 1</a></li>
+            <li><a class="reaccionar" id="meditate2" href=""><span class="emoji">🧘</span>Meditacion 2</a></li>
+            <li><a class="reaccionar" id="meditate3" href=""><span class="emoji">🧘🏿</span>Meditacion 3</a></li>
+        </ul>
+        <!--<ul class="menu submenu-espera">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-ropa">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>-->     
+        <ul class="menu submenu-negaciones solo">
+            <li><a class="reaccionar" id="argue" href=""><span class="emoji">💋</span>Charla</a></li>
+            <li><a class="reaccionar" id="beast" href=""><span class="emoji">🤬</span>Enfado</a></li>
+            <li><a class="reaccionar" id="damn" href=""><span class="emoji">😠</span>Mierda!</a></li>
+            <li><a class="reaccionar" id="facepalm" href=""><span class="emoji">😱</span>Madre mia!</a></li>
+            <li><a class="reaccionar" id="facepalm2" href=""><span class="emoji">😲</span>Por que??</a></li>
+            <li><a class="reaccionar" id="facepalm4" href=""><span class="emoji">🤦🏻‍♂️</span>Dios mio...</a></li>
+            <li><a class="reaccionar" id="no" href=""><span class="emoji">🤷🏻‍♂️</span>Ni de coña</a></li>
+            <li><a class="reaccionar" id="no2" href=""><span class="emoji">🤷🏻</span>No,no,no</a></li>
+        </ul>
+        <!--<ul class="menu submenu-besos">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-varios">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-payaso">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-crucebrazos">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-animo">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>-->
+        <ul class="menu submenu-deporte solo">
+            <li><a class="reaccionar" id="jumpingjacks" href=""><span class="emoji">🏃</span>Saltos</a></li>
+            <li><a class="reaccionar" id="pushup" href=""><span class="emoji">🏃‍♂️</span>Flexiones</a></li>
+            <li><a class="reaccionar" id="situp" href=""><span class="emoji">🏃‍♀️</span>Abdominales</a></li>
+            <li><a class="reaccionar" id="stretch" href=""><span class="emoji">🕺</span>Estiramientos 1</a></li>
+            <li><a class="reaccionar" id="stretch2" href=""><span class="emoji">🕺</span>Estiramientos 2</a></li>
+            <li><a class="reaccionar" id="stretch3" href=""><span class="emoji">🕺</span>Estiramientos 3</a></li>
+            <li><a class="reaccionar" id="stretch4" href=""><span class="emoji">🕺</span>Estiramientos 4</a></li>
+            <li><a class="reaccionar" id="yoga" href=""><span class="emoji">🧘</span>Yoga</a></li>
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo 1</a></li>
+            <li><a class="reaccionar" id="boxing2" href=""><span class="emoji">🥊</span>Boxeo 2</a></li>
+            <li><a class="reaccionar" id="punching" href=""><span class="emoji">🥊</span>Boxeo 3</a></li>
+        </ul>       
+        <!--<ul class="menu submenu-bronca">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-barra">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-meditacion">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-necesidades">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>
+        <ul class="menu submenu-estatua">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>-->
+        <ul class="menu submenu-trabajos solo">
+            <li><a class="reaccionar" id="bumbin" href=""><span class="emoji">⚙️</span>Revisar Motor</a></li>
+            <li><a class="reaccionar" id="mechanic" href=""><span class="emoji">🔧</span>Motor Caliente</a></li>
+            <li><a class="reaccionar" id="mechanic4" href=""><span class="emoji">🔩</span>Reparar</a></li>
+            <li><a class="reaccionar" id="kneel" href=""><span class="emoji">👨‍🔧</span>Revisar</a></li>
+            <li><a class="reaccionar" id="kneel3" href=""><span class="emoji">👩‍🔧</span>Revisar Agachado</a></li>
+            <li><a class="reaccionar" id="inspect" href=""><span class="emoji">👮</span>Inspeccionar</a></li>
+            <li><a class="reaccionar" id="cop" href=""><span class="emoji">👮</span>Agarrar cinturon</a></li>
+            <li><a class="reaccionar" id="cop2" href=""><span class="emoji">👮</span>Cruzar brazos</a></li>
+            <li><a class="reaccionar" id="cop3" href=""><span class="emoji">👮</span>Hablar por radio</a></li>  
+            <li><a class="reaccionar" id="cpr" href=""><span class="emoji">👨‍⚕️</span>CPR</a></li>
+            <li><a class="reaccionar" id="medic" href=""><span class="emoji">💉</span>Supervision EMS</a></li>
+            <li><a class="reaccionar" id="medic2" href=""><span class="emoji">🌡️</span>Tocar cuerpo</a></li>
+            <li><a class="reaccionar" id="cpr2" href=""><span class="emoji">👩‍⚕️</span>CPR en camilla</a></li>
+       </ul>
+        <!-- <ul class="menu submenu-bailes">
+            <li><a class="reaccionar" id="boxing" href=""><span class="emoji">🥊</span>Boxeo</a></li>
+        </ul>-->
+<!-- Fin Add Kaos-->
+        <ul class="menu submenu-puertas solo">
+            <li><a class="vehiclecontrol doors" id="0" href=""><span class="emoji">🔑</span><span class="text">Abrir puerta conductor</span></a></li>
+            <li><a class="vehiclecontrol doors" id="1" href=""><span class="emoji">🔑</span><span class="text">Abrir puerta copiloto</span></a></li>
+            <li><a class="vehiclecontrol doors" id="2" href=""><span class="emoji">🔑</span><span class="text">Abrir puerta trasera izquierda</span></a></li>
+            <li><a class="vehiclecontrol doors" id="3" href=""><span class="emoji">🔑</span><span class="text">Abrir puerta trasera derecha</span></a></li>
+            <li><a class="vehiclecontrol control" id="trunk" href=""><span class="emoji">🚗</span><span class="text">Abrir maletero</span></a></li>
+            <li><a class="vehiclecontrol control" id="hood" href=""><span class="emoji">🚘</span><span class="text">Abrir el capó</span></a></li>
+        </ul>
+        <ul class="menu submenu-intoPoliceCar solo">
+            <li><a class="vehiclecontrol doors" id="0" href=""><span class="emoji">R</span><span class="text"></span>Radar</span></a></li>
+        
+        </ul>
+        <ul class="menu submenu-policeinteraction">
+            <li><a class="sincronizado job police" id="handcuff" href=""><span class="emoji">👮‍♀️</span><span class="text"></span>Esposar</span></a></li>
+        </ul>
+        <ul class="menu menu-dinero">
+            <li><a class="Dinero" id="50" href=""><span class="emoji">💲</span><span class="text">50</span></a></li>
+            <li><a class="Dinero" id="100" href=""><span class="emoji">💲</span><span class="text">100</span></a></li>
+            <li><a class="Dinero" id="500" href=""><span class="emoji">💲</span><span class="text">500</span></a></li>
+            <li><a class="Dinero" id="1000" href=""><span class="emoji">💲</span><span class="text">1000</span></a></li>
+            <li><a class="Dinero" id="5000" href=""><span class="emoji">💲</span><span class="text">5000</span></a></li>
+        </ul>
+
+        <ul class="menu menu-NoConfigObjects">
+            <li><a class="NoConfigObjects" id="both" href=""><span class="emoji">🛠️</span><span class="text">Coger</span></a></li>
+        </ul>
+
+        <ul class="menu menu-objects">
+                <li><a class="objectInteracion Electro" id="Electro" href=""><span class="emoji">⚡</span><span class="text">Tocar</span></a></li>
+                <li><a class="objectInteracion burnIt" id="burnIt" href=""><span class="emoji">🔥</span><span class="text">Prender Fuego</span></a></li>
+                <li><a class="objectInteracion Elevator" id="up" href=""><span class="emoji">🛠️</span><span class="text">Subir</span></a></li>
+                <li><a class="objectInteracion Elevator" id="down" href=""><span class="emoji">🛠️</span><span class="text">Bajar</span></a></li>
+                <li><a class="objectInteracion Elevator" id="stop" href=""><span class="emoji">🛠️</span><span class="text">Parar</span></a></li>
+                <li><a class="objectInteracion Trash" id="tirarBasura" href=""><span class="emoji">🗑️</span><span class="text">Tirar Basura</span></a></li>
+                <li><a class="objectInteracion Trash" id="buscarBasura" href=""><span class="emoji">✋</span><span class="text">Buscar Basura</span></a></li>
+                <li><a class="objectInteracion sitIn" id="sitIn" href=""><span class="emoji">🪑</span><span class="text">Sentarse</span></a></li>
+                <li><a class="objectInteracion TakeAndPush" id="TakeAndPush" href=""><span class="emoji">🪑</span><span class="text">Empujar</span></a></li>
+                <li><a class="objectInteracion TrashJob" id="TrashJob" href=""><span class="emoji">B</span><span class="text">Recoger Basura</span></a></li>
+<!-- -- Interacción máquina SNACKS + COFFEE + FANTA + NOS 03/09/2020 desidi0 cambio3 -->
+                <li><a class="objectInteracion BuyNOS" id="BuyNOS" href=""><span class="emoji">🥫</span><span class="text">Comprar Bebida energética</span></a></li>
+                <li><a class="objectInteracion BuyFanta" id="BuyFanta" href=""><span class="emoji">🍊</span><span class="text">Comprar Fanta</span></a></li>
+                <li><a class="objectInteracion BuySnack" id="BuySnack" href=""><span class="emoji">🍫</span><span class="text">Comprar Chocolatina</span></a></li>
+                <li><a class="objectInteracion BuyCoffee" id="BuyCoffee" href=""><span class="emoji">☕</span><span class="text">Comprar Café</span></a></li>
+                <li><a class="objectInteracion PutFuel" id="PutFuel" href=""><span class="emoji">⛽</span><span class="text">Comprar bidón/Echar Gasolina</span></a></li>
+<!--  -->       <li><a class="objectInteracion LeanOn" id="LeanOn" href=""><span class="emoji">😎</span><span class="text">Apoyarse</span></a></li>
+                <li><a class="objectInteracion TakeWrench" id="TakeWrench" href=""><span class="emoji">🔧</span><span class="text">Coger</span></a></li>
+        </ul>
+
+        
+
+        <script src="front.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+
+        
+    </body>
+</html>

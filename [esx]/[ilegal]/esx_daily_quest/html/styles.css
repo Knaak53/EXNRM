@@ -1,0 +1,761 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	display: none;
+	font-family: 'Signika', sans-serif;
+	user-select: none;
+	text-transform: uppercase;
+	background-color: rgba(17, 5, 17, 0.2);
+}
+
+#warning{
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	height: 20%;
+	background-color: rgba(17, 5, 17, 0.95);
+	border-top: 3px solid lightgrey;
+	border-bottom: 3px solid lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 95pt;
+	font-weight: bold;
+	display: none;
+	color: rgba(17, 5, 60, 0.7);;
+	-webkit-text-stroke: 3px lightgrey;
+}
+
+#mainContainer{	
+	width: 47%;
+	height: 80%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-size: 90%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+#header{
+	width: 100%;
+	height: 4%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	background-color: rgba(17, 5, 60, 0.4);
+	border-radius: 20px 20px 0px 0px;
+}
+
+#headerTitle{
+	width: 95%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	font-size: 15pt;
+}
+
+#close{
+	width: 5%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(120, 0, 0, 0.5);
+	border-radius: 0px 20px 0px 0px;
+	box-sizing: border-box;
+	border-left: 2px solid lightgrey;
+	float: left;
+}
+
+#close:hover{
+	background-color: rgba(200, 0, 0, 0.8);
+}
+
+#topContainer{
+	width: 100%;
+	height: 37%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+}
+
+#npcImage{
+	width: 30%;
+	height: 87%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 60, 0.4);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	float: left;
+	margin-top: 2%;
+	margin-left: 2%;
+	background-position: center center;
+}
+
+#npcData{
+	width: 64%;
+	height: 87%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-size: 90%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	float: left;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+#dataTitle{
+	width: 100%;
+	height: 15%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	display: flex;
+	background-color: rgba(17, 5, 60, 0.4);
+	justify-content: center;
+	align-items: center;
+	font-size: 15pt;
+
+}
+
+#infoContainer{
+	width: 100%;
+	height: 85%;
+}
+
+#rowsContainer{
+	width: 75%;
+	height: 100%;
+	margin-left: 12.5%;
+}
+
+#level{
+	width: 100%;
+	height: 33%;
+	display: flex;
+	align-items: center;
+	font-size: 24pt;
+}
+
+#range{
+	width: 100%;
+	height: 33%;
+	display: flex;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#progressLabel{
+	width: 36%;
+	height: 33%;
+	display: flex;
+	align-items: center;
+	font-size: 16pt;
+	float: left;
+}
+
+#progressBar{
+	width: 64%;
+	height: 60%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 14px;
+	background-color: rgba(17, 5, 17, 0.4);
+	float: left;
+	overflow: hidden;
+	box-shadow: inset -5px 5px 5px 2px rgba(255,255,255,0.4);
+}
+
+#progress{
+	height: 100%;
+	transition: width 2.5s;
+	border-radius: 5px;
+	background-color: rgba(30, 170, 30, 0.4);
+}
+
+#progresNum{
+	width: 24%;
+	height: 54.5%;
+	position: absolute; 
+	margin-left: 20%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#reputation{
+	width: 100%;
+	height: 33%;
+	display: flex;
+	align-items: center;
+	font-size: 18pt;
+	position: relative;
+}
+
+#midContainer{
+	width: 100%;
+	height: 16%;
+	border-bottom: 2px solid lightgrey;
+}
+
+#midHeader{
+	width: 100%;
+	height: 25%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	background-color: rgba(17, 5, 60, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#midQuest{
+	width: 100%;
+	height: 75%;
+}
+
+#questMenu{
+	width: 100%;
+	height: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#questImg{
+	width: 10%;
+	height: 90%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-size: 70%;
+	background-color: rgba(17, 5, 60, 0.4);
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+#questControls{
+	width: 67%;
+	height: 90%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+#controlsHeader{
+	width: 100%;
+	height: 27%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: green;
+}
+
+#controlsContent{
+	width: 100%;
+	height: 73%;	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#questStatus{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: content-box;
+	padding-left: 5%;
+	font-size: 8.5pt;
+}
+
+#questButtonContainer{
+	width: 28%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#questButton{
+	width: 85%;
+	height: 75%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 13px;
+	background-color: rgba(0, 90, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#questRegard{
+	width: 20%;
+	height: 90%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+#regardHeader{
+	width: 100%;
+	height: 27%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#regardContent{
+	width: 100%;
+	height: 73%;	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#itemsRegard{
+	width: 63%;
+	height: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.regardItem{
+	width: 42%;
+	height: 90%;
+	box-sizing: border-box;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	background-color: rgba(17, 5, 17, 0.4);
+	float: left;
+	margin-top: 1%;
+	margin-left: 1.5%;
+	background-size: 70%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#moneyRegard{
+	width: 32%;
+	height: 60%;
+	box-sizing: border-box;
+	border: 1px solid lightgrey;
+	border-radius: 13px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+	font-size: 11pt;
+}
+
+#botContainer{
+	width: 100%;
+	height: 43%;
+}
+
+#stroreHeader{
+	width: 100%;
+	height: 9.3%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	background-color: rgba(17, 5, 60, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#storeContainer{
+	width: 100%;
+	height: 90.2%;
+}
+
+#npcItems{
+	width: 48%;
+	height: 95%;
+	box-sizing: border-box;
+	border-radius: 13px;
+	border: 2px solid lightgrey;
+	margin-top: 0.8%;
+	margin-left: 1%;
+	background-color: rgba(17, 5, 17, 0.4);
+	float: left;
+}
+
+#npcItemsHeader{
+	width: 100%;
+	height: 9%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	background-color: rgba(17, 5, 60, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#npcItemsContainer{
+	width: 100%;
+	height: 73%;
+	overflow-y: auto;
+}
+
+.item{
+	width: 11.7vh;
+	height: 11.7vh;
+	margin-left: 2.5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	display: flex;
+	align-items: flex-end;
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);	
+}
+
+.item-name{
+	width: 100%;
+	background-color: rgba(25, 25, 25, 0.6);
+	font-size: 8pt;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+	box-sizing: border-box;
+	border-top: 1px solid grey;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#npcItemsContainer::-webkit-scrollbar-track{
+    background-color: none;
+    border: none;
+}
+
+#npcItemsContainer::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+#npcItemsContainer::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgba(17, 5, 17, 1);
+}
+
+#npcItemsControls{
+	width: 100%;
+	height: 18%;
+	box-sizing: border-box;
+	border-top: 2px solid lightgrey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#npcItemsQuantity{
+	width: 33%;
+	height: 80%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+	background-color: rgba(17, 5, 17, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#npcLeftArrow{
+	width: 25%;
+	height: 100%;
+	font-size: 24pt;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#npcQuantityNum{
+	width: 50%;
+	height: 100%;
+	float: left;
+	font-size: 24pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#npcRightArrow{
+	width: 25%;
+	height: 100%;
+	font-size: 24pt;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type=number] { 
+  border: none;
+  background-color: transparent;
+  margin: 0; 
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 22pt;
+  color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#inventoryCount{
+	width: 100%;
+  	height: 100%;
+  	display: flex;
+  	justify-content: space-around;
+  	align-items: center;
+}
+
+#numberInputContainer{
+	width: 30%;
+  	height: 60%;
+  	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+}
+
+#numberInputLabel{
+	width: 30%;
+  	height: 60%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+#npcItemsBuy{
+	width: 33%;
+	height: 80%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+	background-color: rgba(0, 90, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#quantityLabel{
+	font-size: 16pt;
+	margin-left: 1%;
+}
+
+#npcPanel{
+	width: 49%;
+	height: 95%;
+	float: left;
+	margin-top: 0.8%;
+}
+
+#npcWantedItemContainer{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 13px;
+	border: 2px solid lightgrey;
+	margin-left: 2%;
+	background-color: rgba(17, 5, 17, 0.4);
+}
+
+#npcWantedItemHeader{
+	width: 100%;
+	height: 9%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	background-color: rgba(17, 5, 60, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#npcWantedItemInfo{
+	width: 100%;
+	height: 71%;
+}
+
+#npcWantedItemControls{
+	width: 100%;
+	height: 18%;
+	box-sizing: border-box;
+	border-top: 2px solid lightgrey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#npcWantedQuantity{
+	width: 33%;
+	height: 80%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+	background-color: rgba(17, 5, 17, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wantedLeftArrow{
+	width: 25%;
+	height: 100%;
+	font-size: 24pt;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wantedQuantityNum{
+	width: 50%;
+	height: 100%;
+	float: left;
+	font-size: 24pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wantedRightArrow{
+	width: 25%;
+	height: 100%;
+	font-size: 24pt;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wantedItemsGive{
+	width: 33%;
+	height: 80%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+	background-color: rgba(0, 90, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#quantityWantedLabel{
+	font-size: 18pt;
+}
+
+#wantedDescription{
+	width: 97%;
+	height: 30%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+	background-color: rgba(17, 5, 17, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 1.5%;
+	margin-top: 1.2%;
+	font-size: 11pt;
+}
+
+#wantedItem{
+	width: 97%;
+	height: 65%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 1.5%;
+	margin-top: 1.2%;
+}
+
+#wantedItemDataContainer{
+	width: 99%;
+	height: 94%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+	background-color: rgba(17, 5, 17, 0.4);
+}
+
+#wantedItemImg{
+	width: 32%;
+	height: 100%;
+	box-sizing: border-box;
+	border-right: 2px solid lightgrey;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+
+#wantedItemName{
+	width: 68%;
+	height: 20%;
+	background-color: rgba(17, 5, 60, 0.4);
+	border-bottom: 2px solid lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	font-size: 15pt;
+}
+
+#wantedItemDescription{
+	width: 66%;
+	margin-left: 1%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	font-size: 9pt;
+}

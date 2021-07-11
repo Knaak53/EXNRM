@@ -1,0 +1,446 @@
+body, html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Signika', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  user-select: none;
+}
+
+#invitationDialog{
+  width: 30%;
+  height: 13%;
+  background-color: rgba(17, 5, 17, 0.4);
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid lightgrey;
+  display: none;
+}
+
+#invitationDialogContent{
+  width: 100%;
+  height: 37%;
+  background-color: rgba(17, 5, 17, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#invitationDialogButtons{
+  width: 100%;
+  height: 35%;
+  background-color: rgba(17, 5, 17, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.button{
+  width: 30%;
+  height: 85%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 2px solid lightgrey;
+}
+
+#yes{
+  background-color: rgba(0, 90, 0, 0.4);
+}
+
+#yes:hover{
+  background-color: rgba(0, 120, 0, 0.6);
+}
+
+#no{
+  background-color: rgba(90, 0, 0, 0.4);
+}
+
+#no:hover{
+  background-color: rgba(120, 0, 0, 0.6);
+}
+
+#invitationDialogHeader{
+  width: 100%;
+  height: 25%;
+  background-color: rgba(17, 5, 60, 0.4);
+  box-sizing: border-box;
+  border-bottom: 2px solid lightgrey;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18pt;
+}
+
+
+
+
+
+
+/* end of invitation and start of commerce container :);*/
+
+
+
+
+
+
+
+#commerceContainer{
+  width: 70%;
+  height: 50%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#interchangeContainer{
+  width: 66%;
+  height: 100%;
+  background-color: rgba(17, 5, 17, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: 2px solid lightgrey;
+}
+
+#interchangeHeader{
+  width: 100%;
+  height: 15%;
+  background-color: rgba(17, 5, 60, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px 7px 0px 0px;
+  border-bottom: 2px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+#interchangeItemsContainer{
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#interchangeControlsContainer{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.interchangeItemsToChange{
+  width: 35%;
+  height: 85%;
+  background-color: rgba(17, 5, 17, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: 2px solid lightgrey;
+}
+
+.interchangeItemsToChangeHeader{
+  width: 100%;
+  height: 15%;
+  background-color: rgba(17, 5, 60, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px 7px 0px 0px;
+  border-bottom: 2px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.changeItems{
+  width: 100%;
+  height: 85%;
+  box-sizing: border-box;
+  border-radius: 0px 0px 7px 7px;
+  overflow-y: auto;
+  background-image: url(img/change.png);
+  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.changeItems::-webkit-scrollbar-track{
+    background-color: none;
+    border: none;
+}
+
+.changeItems::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+.changeItems::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgba(17, 5, 17, 1);
+}
+
+#interchangeIcon{
+  width: 50%;
+  height: 33%;
+  margin-left: 25%;
+  background-color: rgba(17, 5, 60, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: 2px solid lightgrey;
+  background-image: url(img/business.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#interchangeReadyIcons{
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.interchangeReadyIcon{
+  width: 36%;
+  height: 52%;
+  background-color: rgba(17, 5, 17, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: 2px solid lightgrey;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+
+#interchangeIconsContainer{
+  width: 24%;
+  height: 85%;
+}
+
+#interchangeContent{
+  width: 100%;
+  height: 85%;
+  background-color: rgba(17, 5, 17, 0.4);
+}
+
+
+
+.button2{
+  width: 30%;
+  height: 80%;
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: 2px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14pt;
+}
+
+#accept{
+  background-color: rgba(0, 90, 0, 0.4);
+}
+
+#accept:hover{
+  background-color: rgba(0, 120, 0, 0.6);
+}
+
+#decline{
+  background-color: rgba(90, 0, 0, 0.4);
+}
+
+#decline:hover{
+  background-color: rgba(130, 0, 0, 0.6);
+}
+
+#inventoryContainer{
+  width: 33%;
+  height: 100%;
+  background-color: rgba(17, 5, 17, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: 2px solid lightgrey;
+}
+
+#inventoryItems{
+  width: 100%;
+  height: 70%;
+  overflow-y: auto; 
+  background-image: url(img/backpack.png);
+  background-size: 85%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#inventoryItems::-webkit-scrollbar-track{
+    background-color: none;
+    border: none;
+}
+
+#inventoryItems::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+#inventoryItems::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgba(17, 5, 17, 1);
+}
+
+#inventoryHeader{
+  width: 100%;
+  height: 15%;
+  background-color: rgba(17, 5, 60, 0.4);
+  box-sizing: border-box;
+  border-radius: 7px 7px 0px 0px;
+  border-bottom: 2px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+#inventoryCount{
+  width: 100%;
+  height: 15%;
+  background-color: rgba(17, 5, 17, 0.4);
+  box-sizing: border-box;
+  border-radius: 0px 0px 7px 7px;
+  border-top: 2px solid lightgrey;
+}
+
+input[type=number] { 
+  border: none;
+  background-color: transparent;
+  margin: 0; 
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 22pt;
+  color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#inventoryCount{
+  width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numberInputContainer{
+  width: 30%;
+  height: 60%;
+  box-sizing: border-box;
+  border: 2px solid lightgrey;
+  border-radius: 7px;
+}
+
+#numberInputLabel{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.item{
+  width: 12.1vh;
+  height: 12.1vh;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: rgba(17, 5, 17, 0.4);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+  
+}
+
+.item-little{
+  width: 8.4vh;
+  height: 8.4vh;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: rgba(17, 5, 17, 0.4);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+  
+}
+
+.item-name-little{
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.6);
+  font-size: 6pt;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  box-sizing: border-box;
+  border-top: 1px solid grey;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.item-name{
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.6);
+  font-size: 8pt;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  box-sizing: border-box;
+  border-top: 1px solid grey;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.separator{
+    width: 93%;
+    height: 0.2%;
+    background-color: white;
+    float: left;
+    margin-left: 2.5%;
+}

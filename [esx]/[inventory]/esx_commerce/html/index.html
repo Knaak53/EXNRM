@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="app.js"></script>
+  <div id="invitationDialog">
+    <div id="invitationDialogHeader">Invitacion de comercio</div>
+    <div id="invitationDialogContent">Alguien quiere invitarte a comerciar.</div>
+    <div id="invitationDialogButtons">
+      <div id="yes" class="button">Comerciar</div>
+      <div id="no" class="button">Rechazar</div>
+    </div>
+  </div>
+  <div id="commerceContainer">
+    <div id="inventoryContainer">
+      <div id="inventoryHeader">Inventario</div>
+      <div id="inventoryItems"></div>
+      <div id="inventoryCount">
+        <div id="numberInputLabel">Cantidad:</div>
+        <div id="numberInputContainer">
+          <input type="number" id="playerItemsInput" name="itemQuantity" min="1" max="100" placeholder="0">
+        </div> 
+      </div>
+    </div>
+    <div id="interchangeContainer">
+      <div id="interchangeHeader">Comerciando con tu madre</div>
+      <div id="interchangeContent">
+        <div id="interchangeItemsContainer">
+            <div id="playerItemsOffered" class="interchangeItemsToChange">
+              <div id="playerName" class="interchangeItemsToChangeHeader">Manue</div>
+              <div id="playerItems" class="changeItems"></div>
+            </div>
+            <div id="interchangeIconsContainer">
+              <div id="interchangeReadyIcons">
+                <div id="playerReady" class="interchangeReadyIcon"></div>
+                <div id="thirdReady" class="interchangeReadyIcon"></div>
+              </div>
+              <div id="interchangeIcon"></div>
+            </div>  
+            <div id="thirdItemsOffered" class="interchangeItemsToChange">
+              <div id="thirdName" class="interchangeItemsToChangeHeader">Eustaquio</div>
+              <div id="thirdItems" class="changeItems"></div>
+            </div>
+        </div>
+        <div id="interchangeControlsContainer">
+            <div id="accept" class="button2">Confirmar Comercio</div>
+            <div id="decline" class="button2">Cancelar Comercio</div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</body>
+</html>

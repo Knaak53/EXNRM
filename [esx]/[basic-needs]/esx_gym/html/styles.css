@@ -1,0 +1,406 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	display: none;
+	font-family: 'Signika', sans-serif;
+	user-select: none;
+	text-transform: uppercase;
+	background-color: rgba(17, 5, 17, 0.2);
+}
+
+#mainContainer{
+	width: 50%;
+	height: 60%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	float: left;
+}
+
+#npcContainer{
+	width: 35%;
+	height: 100%;
+	float: left;
+}
+
+#npcImage{
+	width: 96%;
+	height: 48%;
+	margin-left: 2%;
+	margin-top: 2%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 60, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	background-image: url(img/muscle.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#subscriptionInfo{
+	width: 96%;
+	height: 48%;
+	margin-left: 2%;
+	margin-top: 3%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+}
+
+#subscriptionInfoHeader{
+	width: 100%;
+	height: 15%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 60, 0.4);
+	border-bottom: 2px solid lightgrey;
+	border-radius: 12px 12px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16pt;
+}
+
+#subscriptionStatus{
+	width: 95%;
+	height: 30%;
+	margin-left: 2.5%;
+	margin-top: 2.5%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 8px;
+	font-size: 18pt;
+}
+
+#subscriptionImage{
+	width: 31%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 60, 0.4);
+	border-right: 2px solid lightgrey;
+	border-radius: 8px 0px 0px 8px;
+	background-image: url(img/check.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	float: left;
+}
+
+#subscriptionText{
+	width: 69%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	font-size: 24pt;
+	color: green;
+	font-weight: bold;
+}
+
+#subscriptionDescription{
+	width: 95%;
+	height: 47.5%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 8px;
+	margin-left: 2.5%;
+	margin-top: 2.5%;
+	line-height: 140%;
+}
+
+#gymContainer{
+	width: 65%;
+	height: 100%;
+	float: left;
+}
+
+#buySubContainer{
+	width: 99%;
+	height: 47.9%;
+	margin-top: 1.2%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+}
+
+#buySubHeader{
+	width: 100%;
+	height: 12%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 60, 0.4);
+	border-bottom: 2px solid lightgrey;
+	border-radius: 12px 12px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18pt;
+	position: relative;
+}
+
+#closeButton{
+	position: absolute;
+	right: 0%;
+	width: 6%;
+	height: 100%;
+	background-color: rgba(110, 0, 0, 0.4);
+	border-radius: 0px 12px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 2px solid lightgrey;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#closeButton:hover{
+	background-color: rgba(150, 0, 0, 0.6);
+}
+
+#memberCardContainer{
+	width: 98%;
+	height: 68%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1%;
+	margin-top: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#memberPanelContainer{
+	width: 70%;
+	height: 92%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrow{
+	width: 11%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 60, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 29pt;
+	font-weight: bold;
+}
+
+.arrow:hover{
+	background-color: rgba(17, 5, 120, 0.6);
+}
+
+#card{
+	width: 77%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	margin-left: 2%;
+	margin-right:  2%;
+}
+
+#memberButtonContainer{
+	width: 100%;
+	height: 18%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#duration{
+   	width: 25%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16pt;
+}
+
+#price{
+   	width: 25%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16pt;
+	font-weight: bold;
+	color: green;
+}
+
+#payMember{
+   	width: 35%;
+	height: 90%;
+	box-sizing: border-box;
+	background-color: rgba(0, 90, 0, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+#storeContainer{
+	width: 99%;
+	height: 48.1%;
+	margin-top: 1.5%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+}
+
+#storeHeader{
+	width: 100%;
+	height: 15.2%;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 60, 0.4);
+	border-bottom: 2px solid lightgrey;
+	border-radius: 12px 12px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18pt;
+}
+
+#itemsContainer{
+	width: 100%;
+	height: 70%;
+	overflow-y: auto;
+}
+
+#itemsContainer::-webkit-scrollbar-track{
+    background-color: none;
+    border: none;
+}
+
+#itemsContainer::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+#itemsContainer::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgba(17, 5, 17, 1);
+}
+
+#buyControls{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	border-top: 2px solid lightgrey;
+}
+
+input[type=number] { 
+  border: none;
+  background-color: transparent;
+  margin: 0; 
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 22pt;
+  color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#quantityLabel{
+	width: 30%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#inputContainer{
+	width: 50%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: rgba(17, 5, 17, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+}
+
+#buyButton{
+	width: 30%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: rgba(0, 90, 0, 0.4);
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+}
+
+.item{
+	width: 12.2vh;
+	height: 12.2vh;
+	margin-left: 2.5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	box-sizing: border-box;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	display: flex;
+	align-items: flex-end;
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.item-name{
+	width: 100%;
+	background-color: rgba(25, 25, 25, 0.6);
+	font-size: 8pt;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+	box-sizing: border-box;
+	border-top: 1px solid grey;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="app.js"></script>
+    <div style="position: absolute: left: 30%;" id="debug"></div>
+    <div id="sellContainer">
+        <div id="npcImg"></div>
+        <div id="sellInfoContainer">
+            <div id="sellInfoHeader">Stephan Wolowitz</div>
+            <div id="sellInfo">
+                <div id="sellDescription">No se que estaras buscando por Stab city, yo solo puedo ofrecerte codigos de las cajas fuertes de las tiendas, se controlan por ordenador, cada vez que hay un atraco, la empresa cambia los codigos, pero un contacto me pasa siempre el mas actualizado desde dentro, los vendo a 4500€ y solo cobro en negro. Si quieres que los atracos a tiendas te den mejores resultados, piensatelo.</div>
+                <div id="sellItemContainer">
+                    <div id="itemContainer">
+                        <div id="itemImage"></div>
+                        <div id="itemInfo">
+                            <div id="itemName">Clave del ordenador de las tiendas</div>
+                            <div id="itemPrice">4500€</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sellButtons">
+                <div id="buy" class="button">comprar</div>
+                <div id="exit" class="button">salir</div>
+            </div>
+        </div>
+    </div>
+    <div id="lookContainer">
+        <div id="closeLook">x</div>
+        <div id="lookCode"></div>
+    </div>
+    <div id="computerContainer">
+        <div id="screen">
+            <div id="consoleContainer">
+                <div id="consoleHeader">C:\Programas\tienda\Terminal de la tienda</div>
+                <textarea id="console" spellcheck="false" autofocus></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

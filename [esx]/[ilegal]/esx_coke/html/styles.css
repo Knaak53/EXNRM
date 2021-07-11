@@ -1,0 +1,259 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	display: none;
+	user-select: none;
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+}
+
+#mainContainer{	
+	width: 45%;
+	height: 40%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	display: none;
+}
+
+#progressContainer{
+	position: absolute;
+	width: 27%;
+	height: 10%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.6);
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	left: 36.5%;
+	bottom: 1%;
+	display: none;
+}
+
+#progressHeader{
+	width: 100%;
+	height: 28%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	border-radius: 12px 12px 0px 0px;
+	background-color: rgba(0, 90, 0, 0.4);
+	font-weight: bold;
+}
+
+#progressContent{
+	width: 100%;
+	height: 72%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#progressBar{
+	width: 90%;
+	height: 55%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 15px;
+	background-color: rgba(17, 5, 17, 0.4);
+	overflow: hidden;
+}
+
+#progress{
+	height: 100%;
+	background-color: rgba(0, 90, 0, 0.6);
+	border-radius: 0px 10px 10px 0px;
+}
+
+#leftSide{
+	width: 37%;
+	height: 100%;
+	float: left;
+}
+
+#npcImage{	
+	width: 100%;
+	height: 75%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 14px;
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	background-color: rgba(17, 5, 60, 0.4);
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	background-image: url(img/weedguy.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#buttonsContainer{
+	width: 100%;
+	height: 23%;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	margin-left: 2.5%;
+}
+
+.button{
+	width: 45%;
+	height: 47%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-weight: bold;
+}
+
+#init{
+	background-color: rgba(0, 90, 0, 0.4);
+}
+
+#init:hover{
+	background-color: rgba(0, 120, 0, 0.6);
+}
+
+#close{
+	background-color: rgba(90, 0, 0, 0.4);
+}
+
+#close:hover{
+	background-color: rgba(120, 0, 0, 0.6);
+}
+
+#rightSide{
+	width: 63%;
+	height: 100%;
+	float: left;
+}
+
+#rightSideHeader{
+	width: 96%;
+	height: 10%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	margin-top: 1.5%;
+	margin-left: 2.5%;
+	background-color: rgba(17, 5, 60, 0.4);
+	font-size: 17pt;
+	font-weight: bold;
+}
+
+#infoContainer{
+	width: 96%;
+	height: 84.3%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 14px;
+	margin-top: 1.5%;
+	margin-left: 2.5%;
+	background-color: rgba(17, 5, 17, 0.4);
+}
+
+#cokeStatusContainer{
+	width: 100%;
+	height: 29%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#cokeStatus{
+	width: 90%;
+	height: 87%;
+}
+
+#statusImage{
+	width: 17%;
+	height: 90%;
+	margin-left: 2%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 9px;
+	background-color: rgba(17, 5, 60, 0.4);
+	float: left;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#statusName{
+	width: 78%;
+	height: 90%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 17pt;
+	font-weight: bold;
+}
+
+#description{
+	width: 97.2%;
+	margin-left: 1.5%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 11pt;
+	box-sizing: border-box;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+#costContainer{
+	width: 100%;
+	height: 30.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#costLabel{
+	width: 17%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#costImg{
+	width: 19%;
+	height: 90%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 8px;
+	background-color: rgba(17, 5, 17, 0.4);
+	background-image: url(img/weed_card.png);
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: center center;
+	position: relative;
+}
+
+#costCount{
+	position: absolute;
+	bottom: 5%;
+	right: 7%;
+	font-size: 10pt;
+}

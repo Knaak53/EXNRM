@@ -1,0 +1,200 @@
+@font-face {
+	font-family: 'Pricedown';
+	src: url('../fonts/pdown.ttf')
+}
+
+@font-face {
+	font-family: 'bankgothic';
+	src: url('../fonts/bankgothic.ttf')
+}
+
+html {
+	overflow: hidden;
+}
+
+#container
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+#itemanimclass{
+    top: -10%;
+    left: 65%;
+    position: absolute;
+    z-index: 3;
+}
+
+#backpack_empty {
+  background-image: url('../img/items/Backpack_icon.png');
+  background-size: 100px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  background-position: right bottom;
+  bottom: 0; left: 0;
+  z-index: 1;
+}
+
+#backpack_full {
+   background-image: url('../img/items/Backpack_icon_full.png');
+   background-size: auto 100px;
+   width: 100%;
+   height: 50%;
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   position: absolute;
+   bottom: 0; left: 0;
+   display: block;
+   z-index: 2;
+}
+
+#hud {
+	position: absolute;
+	font-family: 'Pricedown';
+	font-size: 35px;
+	color: white;
+	padding: 4px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	text-align: right;
+	top: 80;
+	right: 40;
+}
+
+#inventory_notifications {
+	font-family: bankgothic;
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	right: 40;
+	bottom: 40;
+	font-size: 2em;
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.menu {
+	font-family: 'Open Sans', sans-serif;
+	min-width: 400px;
+	min-height: 250px;
+	color: #fff;
+	position: absolute;
+	left: 40;
+	top: 0;
+}
+
+.menu .head {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	padding: 10px;
+	background: #1A1A1A;
+	border-bottom: 3px solid #BC1635;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+	box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+	-moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+	-o-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+	box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.4);
+}
+
+.menu .head span {
+	font-family: 'Pricedown';
+	font-size: 28px;
+	padding-left: 15px;
+	padding-top: 6px;
+}
+
+.menu .menu-items .menu-item {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	height: 40px;
+	display: block;
+	background-color: #f1f1f1;
+	box-shadow: inset 1px 0px 0px 1px #b8b8b8;
+	height: 32px;
+	line-height: 32px;
+	color: #3A3A3A;
+	text-align: center;
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: #ccc;
+}
+
+.login-dark {
+    background-size: cover
+}
+
+.login-dark form {
+    width: 90%;
+    background-color: #1e2833;
+    padding: 40px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .2)
+}
+
+.login-dark .illustration {
+    text-align: center;
+    padding: 15px 0 20px;
+    font-size: 100px;
+    color: #2980ef
+}
+
+.login-dark form .form-control {
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid #434a52;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    color: inherit
+}
+
+.login-dark form .btn-primary {
+    background: #214a80;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: 0
+}
+
+.login-dark form .btn-primary:active,
+.login-dark form .btn-primary:hover {
+    background: #214a80;
+    outline: 0
+}
+
+.login-dark form .forgot {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: .9;
+    text-decoration: none
+}
+
+.login-dark form .forgot:active,
+.login-dark form .forgot:hover {
+    opacity: 1;
+    text-decoration: none
+}
+
+.login-dark form .btn-primary:active {
+    transform: translateY(1px)
+}

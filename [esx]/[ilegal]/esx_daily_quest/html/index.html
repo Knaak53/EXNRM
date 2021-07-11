@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="audioQuest" type="audio/mpeg" src="audio/warning.mp3"></audio>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="app.js"></script>
+    <div id="warning">mision iniciada</div>
+    <div id="mainContainer">
+        <div id="header">
+          <div id="headerTitle">Menu de misiones diarias</div>
+          <div id="close">x</div>
+        </div>
+        <div id="topContainer">
+            <div id="npcImage"></div>
+            <div id="npcData">
+                <div id="dataTitle"></div>
+                <div id="infoContainer">
+                    <div id="rowsContainer">
+                        <div id="level"></div>
+                        <div id="range"></div>
+                        <div id="reputation">
+                            <div id="progressLabel">Reputación:</div>
+                            <div id="progressBar">
+                                <div id="progresNum"></div>
+                                <div id="progress"></div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+        <div id="midContainer">
+            <div id="midHeader">misiones</div>
+            <div id="midQuest">
+                <div id="questMenu">
+                    <div id="questImg"></div>
+                    <div id="questControls">
+                        <div id="controlsHeader">Mision disponible</div>
+                        <div id="controlsContent">
+                            <div id="questStatus">Puedes iniciar una nueva mision diaria.</div>
+                            <div id="questButtonContainer">
+                                <div id="questButton">Iniciar mision</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="questRegard">
+                        <div id="regardHeader">Recompensas</div>
+                        <div id="regardContent">
+                            <div id="itemsRegard">
+                            </div>
+                            <div id="moneyRegard">2000€</div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div id="botContainer">
+            <div id="stroreHeader">Menu de comercio</div>
+            <div id="storeContainer">
+                <div id="npcItems">
+                    <div id="npcItemsHeader">Comprar</div>
+                    <div id="npcItemsContainer"></div>
+                    <div id="npcItemsControls">
+                        <div id="quantityLabel">cantidad:</div>
+                        <div id="npcItemsQuantity">
+                            <input type="number" id="npcItemsInput" name="itemQuantity" min="1" max="100" placeholder="1">
+                        </div>
+                        <div id="npcItemsBuy">comprar</div>
+                    </div>
+                </div>
+                <div id="npcPanel">
+                    <div id="npcWantedItemContainer">
+                        <div id="npcWantedItemHeader">vender</div>
+                        <div id="npcWantedItemInfo">
+                            <div id="wantedDescription">Encuentra objetos de interes para John y recibirás dinero y puntos de reputacion</div>
+                            <div id="wantedItem">
+                                <div id="wantedItemDataContainer">
+                                    <div id="wantedItemImg"></div>
+                                    <div id="wantedItemName"></div>
+                                    <div id="wantedItemDescription"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="npcWantedItemControls">
+                            <div id="wantedItemsGive">vender</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

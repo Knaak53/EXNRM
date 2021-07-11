@@ -1,0 +1,141 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	display: none;
+	user-select: none;
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+}
+
+#mainContainer{	
+	width: 30%;
+	height: 20%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background-color: rgba(17, 5, 17, 0.6);
+	box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+	position: absolute;
+	display: none;
+	left: 35%;
+	bottom: 0.6%;
+}
+
+#mainHeader{
+	width: 100%;
+	height: 17%;
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	border-radius: 20px 20px 0px 0px;
+	background-color: rgba(17, 5, 60, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+	font-weight: bold;
+	position: relative;
+}
+
+#closeButton{
+	width: 7%;
+	height: 100%;
+	position: absolute;
+	right: 0%;
+	box-sizing: border-box;
+	border-left: 2px solid lightgrey;
+	border-radius: 0px 20px 0px 0px;
+	background-color: rgba(110, 0, 0, 0.5);
+	font-size: 14pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#closeButton:hover{
+	background-color: rgba(160, 0, 0, 0.7);
+}
+
+#drugsContainer{
+	width: 100%;
+	height: 83%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.drugItemContainer{
+	width: 23%;
+	height: 90%;
+	box-sizing: border-box;
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	background-color: rgba(17, 5, 17, 0.6);
+}
+
+.drugItemContainer:hover{
+	background-color: rgba(50, 50, 50, 0.5);
+}
+
+.itemImg{
+	width: 100%;
+	height: 50%;
+	background-size: 70%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}	
+
+.itemName{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(17, 5, 60, 0.4);
+	align-items: center;
+	font-size: 11pt;
+}	
+
+.policeContainer{
+	width: 100%;
+	height: 35%;
+}
+
+.percentage{
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: red;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.policeImg{
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-image: url(img/police.png);
+	background-position: center center;
+	background-size: 65%;
+	background-repeat: no-repeat;
+}
+
+#weedImg{
+	background-image: url(img/weed_pooch.png);
+}
+
+#cokeImg{
+	background-image: url(img/coke_pooch.png);
+}
+
+#methImg{
+	background-image: url(img/meth_pooch.png);
+}
+

@@ -1,0 +1,525 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+    font-family: 'Signika', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    user-select: none;
+}
+
+#storeMenu{
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#npcLimitBarContainer{
+	width: 25%;
+	height: 8%;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	position: absolute;
+	bottom: 0.6%;
+	left: 22.5%;
+	display: none;
+}
+
+#npcLimitHeader{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(90, 0, 0, 0.5);
+	box-sizing: border-box;
+	border-radius: 20px 20px 0px 0px;
+	border-bottom: 2px solid lightgrey;
+}
+
+#npcLimitBarProcess{
+	height: 100%;
+	width: 3%;
+	background-color: rgba(160, 40, 0, 0.7);
+	border-radius: 12px;
+	transition: width 0.3s;
+}
+
+#npcBarContent{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#npcLimitBar{
+	width: 95%;
+	height: 70%;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-sizing: border-box;
+	border-radius: 12px;
+	border: 2px solid lightgrey;
+}
+
+#robberyUi{
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#startRobberyDialog{
+	width: 30%;
+	height: 20%;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	display: none;
+}
+
+#robberyDialogContent{
+	width: 100%;
+	height: 60%;
+	background-color: rgba(17, 5, 17, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#robberyDialogButtons{
+	width: 100%;
+	height: 25%;
+	background-color: rgba(17, 5, 17, 0.5);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.button{
+	width: 30%;
+	height: 65%;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 12px;
+	border: 2px solid lightgrey;
+}
+
+#yes{
+	background-color: rgba(0, 90, 0, 0.4);
+}
+
+#yes:hover{
+	background-color: rgba(0, 120, 0, 0.6);
+}
+
+#no{
+	background-color: rgba(90, 0, 0, 0.4);
+}
+
+#no:hover{
+	background-color: rgba(120, 0, 0, 0.6);
+}
+
+#robberyDialogHeader{
+	width: 100%;
+	height: 15%;
+	background-color: rgba(110, 0, 0, 0.4);
+	box-sizing: border-box;
+	border-bottom: 2px solid lightgrey;
+	border-radius: 20px 20px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18pt;
+}
+
+#container{
+	width: 30%;
+	height: 50%;
+	background-image: url(img/shelve.png);
+	background-size: cover;	
+	display: none;
+}
+
+#rowUp{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+	height: 15%;
+	margin-top: 27.3%;
+	margin-left: 15%;
+}
+
+#rowDown{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+	height: 15%;
+	margin-top: 4.8%;
+	margin-left: 15%;
+}
+
+.item{
+	width: 9.8vh;
+	height: 4.5vw;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	text-align: center;
+	float: left;
+}
+
+.itemprice{
+	width: 30%;
+	margin-top: 50%; 
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item-name{
+	height: 15%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding-bottom: 3px;
+	position: bottom;
+	font-size: 10pt;
+}
+
+.product{
+	width: 20%;
+	height: 100%;
+}
+
+#carrito{
+	width: 38%;
+	margin-top: 3%;
+	margin-left: 57%;
+	height: 20%;
+	background-color: rgba(0, 100, 0, 0.4);
+	border-radius: 50%;
+	border: 2px solid lightgrey;
+	background-image: url(img/carrito.png);
+	background-size: cover;
+	box-shadow: inset 5px 5px 5px 5px rgba(180, 255, 180, 0.3);
+}
+
+#controls{
+	width: 15%;
+	height: 50%;
+	display: none;
+}
+
+#exit{
+	width: 21%;
+	height: 11%;
+	margin-left: 80%;
+	margin-top: 55%;
+	background-color: rgba(180, 0, 0, 0.4);
+	border-radius: 50%;
+	border: 2px solid lightgrey;
+	background-image: url(img/arrow.png);
+	background-size: cover;
+	box-shadow: inset 5px 5px 5px 5px rgba(255, 180, 180, 0.3);
+}
+
+#exit:hover{
+	background-color: rgba(220, 0, 0, 0.7);
+}
+
+#carrito:hover{
+	background-color: rgba(0, 100, 0, 0.6);
+}
+
+.hoverControl {
+    background-color: rgba(0, 100, 0, 0.6);
+}
+
+#cashier{
+	width: 40%;
+	height: 50%;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	display: none;
+}
+
+#store-logo{
+	width: 40%;
+	height: 20%;
+	box-sizing: border-box;
+	border-right: 2px solid lightgrey;
+	border-bottom: 2px solid lightgrey;
+	background-image: url(img/logo.png);
+	background-size: 60%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#store-title{
+	width: 60%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: rgba(10, 15, 60, 0.4);
+	border-radius: 0px 20px 0px 0px;
+	border-bottom: 2px solid lightgrey;
+	font-size: 28pt;
+	float: left;
+}
+
+#receipt-body{
+	width: 100%;
+	height: 80%;
+	float: left;
+}
+
+#tablecontainer{
+	width: 96%;
+	height: 80%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	margin-left: 2%;
+	margin-top: 1.8%;
+	overflow-y: auto;
+}
+
+#tablecontainer::-webkit-scrollbar-track{
+    background-color: none;
+    border: none;
+}
+
+#tablecontainer::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(17, 5, 17, 0.2);
+}
+
+#tablecontainer::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgba(17, 5, 17, 1);
+}
+
+#confirm{
+	width: 20%;
+	height: 8%;
+	background-color: rgba(0, 120, 0, 0.4);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	margin-top: 2.5%;
+	margin-left: 20%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#confirm:hover{
+	background-color: rgba(0, 170, 0, 0.6);
+}
+
+.cancel:hover{
+	background-color: rgba(170, 0, 0, 0.6);
+}
+
+.cancel{
+	width: 20%;
+	height: 8%;
+	background-color: rgba(120, 0, 0, 0.4);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	margin-top: 2.5%;
+	margin-left: 20%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rowFactura{
+	width: 98%;
+	height: 10%;	
+	float: left;
+	margin-top: 1%;
+	margin-left: 1%;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+}
+
+.rowFactura:nth-child(odd){
+	background-color: rgba(17, 5, 17, 0.4);
+}
+
+.rowFactura:nth-child(even){
+	background-color: rgba(80, 80, 80, 0.4);
+}
+
+#rowcabecera{
+	width: 98%;
+	height: 10%;
+	background-color: rgba(10, 15, 60, 0.4);
+	float: left;
+	margin-top: 1%;
+	margin-left: 1%;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+}
+
+#rowtotal{
+	width: 98%;
+	height: 10%;
+	float: left;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+
+.totalspace{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+
+.total{
+	width: 40%;
+	height: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(10, 15, 60, 0.4);
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+}
+
+.label{
+	width: 60%;
+	height: 100%;
+	box-sizing: border-box;
+	border-right: 1px solid lightgrey;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.amount{
+	width: 20%;
+	height: 100%;
+	box-sizing: border-box;
+	border-right: 1px solid lightgrey;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.priceLabel{
+	width: 20%;
+	height: 100%;
+	box-sizing: border-box;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price{
+	width: 20%;
+	height: 100%;
+	box-sizing: border-box;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: green;
+}
+
+#pay{
+	width: 40%;
+	height: 50%;
+	background-color: rgba(17, 5, 17, 0.4);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	display: none;
+}
+
+#paybuttons{
+	width: 96%;
+	height: 80%;
+	margin-left: 2%;
+	margin-top: 1.8%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#cash{
+	width: 45%;
+	height: 50%;
+	background-color: rgba(0, 120, 0, 0.2);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	background-image: url(img/cash.png);
+	background-size: 97%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#card{
+	width: 45%;
+	height: 50%;
+	background-color: rgba(120, 120, 0, 0.4);
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 2px solid lightgrey;
+	background-image: url(img/card.png);
+	background-size: cover;
+	background-position: center center;
+}
+
+#cash:hover{
+	background-color: rgba(0, 210, 0, 0.4);
+	transform: scale(1.1);
+}
+
+#card:hover{
+	background-color: rgba(210, 210, 0, 0.5);
+	transform: scale(1.1);
+}
+
+

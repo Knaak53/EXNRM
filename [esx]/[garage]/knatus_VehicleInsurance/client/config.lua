@@ -1,0 +1,5 @@
+Config = {}
+Config.InsuranceCoords = 
+{
+    General = {coords = vector3(371.58178710938,-1612.162109375,29.291934967041), spawnc = vector3(378.01440429688,-1629.4871826172,28.401882171631), spawnh = 318.95568847656}
+}

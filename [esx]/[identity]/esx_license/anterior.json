@@ -1,0 +1,47 @@
+{"job":{
+    "name":"desempleado",
+    "grade":0,
+    "grade_label":"En Paro",
+    "grade_name":"desempleado",
+    "skin_female":[],
+    "skin_male":[],
+    "label":"Desempleado",
+    "grade_salary":50
+    },
+ "identifier":"fivem:300984",
+ "maxWeight":24000,
+ "inventory":[],
+ "name":"Alejandro Avililla",
+ "loadout":[],
+ "group":"user",
+ "playerId":1,
+ "weight":0,
+    "accounts":[
+        {"money":50000,
+         "label":"Banco",
+         "name":"bank"
+        },
+        {
+         "money":500,
+         "label":"Efectivo",
+         "name":"money"
+        },
+        {
+         "money":0,
+         "label":"Dinero negro",
+         "name":"black_money"
+        }
+    ],
+    "coords":{
+        "y":-984.9,
+        "x":-246.2,
+        "heading":262.7,
+        "z":31.6
+    },
+    "source":1,
+    "variables":{"firstName":"Alejandro","sex":"m",
+        "addonAccounts":[
+            {"addMoney":
+                {"__cfx_functionReference":"extendedmode:22345:1391"},"money":0,"name":"playerExample","save":{"__cfx_functionReference":"extendedmode:22345:1388"},"owner":"fivem:300984","setMoney":{"__cfx_functionReference":"extendedmode:22345:1389"},"removeMoney":{"__cfx_functionReference":"extendedmode:22345:1390"},"savingState":false}],
+   "lastName":"Avililla",
+   "addonInventories":[{"saveItem":{"__cfx_functionReference":"extendedmode:22345:1392"},"items":[],"addItem":{"__cfx_functionReference":"extendedmode:22345:1393"},"name":"armario","setItem":{"__cfx_functionReference":"extendedmode:22345:1394"},"removeItem":{"__cfx_functionReference":"extendedmode:22345:1396"},"getItem":{"__cfx_functionReference":"extendedmode:22345:1395"},"owner":"fivem:300984","savingState":false}],"height":"170","dateofbirth":"2000-08-16","licenses":[]}}

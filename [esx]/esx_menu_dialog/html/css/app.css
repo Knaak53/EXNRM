@@ -1,0 +1,109 @@
+@font-face {
+	font-family: bankgothic;
+	src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+	font-family: pcdown;
+	src: url('../fonts/pdown.ttf');
+}
+
+#controls {
+	font-family: pcdown;
+	font-size: 3em;
+	color: #FFF;
+	position: absolute;
+	bottom: 40;
+	right: 40;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.controls {
+	display: none;
+}
+
+.dialog {
+	font-family: bankgothic;
+	color: #fff;
+	position: absolute;
+	overflow: hidden;
+	top: 55%;
+	left: 66%;
+	width: 250px;
+	height: 250px;
+	transform: translate(-50%, -50%);
+}
+
+.dialog.big {
+	height: 200px;
+}
+
+.dialog .head {
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid lightgrey;
+	border-radius: 15px;
+	font-size: 16pt;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-bottom: 10px;
+}
+
+.dialog .head span:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog input[type="text"] {
+	width: 50%;
+	margin-left: 25%;
+	height: 50px;
+	color: white;
+	text-align: center;
+	border-radius: 13px;
+	font-size: 24pt;
+	border: 2px solid lightgrey;
+	background-color: rgba(70, 70, 70, 0.6);
+}
+
+.dialog textarea{
+	width: 100%;
+	height: 128px;
+}
+
+textarea:focus{
+	outline: none;
+}
+
+.dialog button[name="submit"] {
+	width: 40%;
+	height: 40px;
+	margin-top: 10px;
+	color: white;
+	font-size: 14pt;
+	border: 2px solid lightgrey;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 20px;
+}
+
+.dialog button[name="submit"]:hover{
+	background-color: rgba(70, 70, 70, 0.6);
+}
+
+.dialog button[name="cancel"] {
+	width: 40%;
+	height: 40px;
+	margin-top: 10px;
+	float: right;
+	color: white;
+	font-size: 14pt;
+	border: 2px solid lightgrey;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 20px;
+}
+
+.dialog button[name="cancel"]:hover{
+	background-color: rgba(70, 70, 70, 0.6);
+}

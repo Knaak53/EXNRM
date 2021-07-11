@@ -1,0 +1,120 @@
+@font-face {
+	font-family: bankgothic;
+	src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+	font-family: pcdown;
+	src: url('../fonts/pdown.ttf');
+}
+
+.menu {
+	font-family: bankgothic;
+	min-width: 23%;
+	color: #fff;
+	position: absolute;
+	border-radius: 0px 0px 20px 20px;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 10px;
+}
+
+.menu.align-left {
+	left: 0.3%;
+	top: 40%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu .head {
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 17px;
+	font-size: 14pt;
+	border: 2px solid lightgrey;
+	background-color: rgba(10, 15, 60, 0.6);
+	margin-bottom: 3px;
+}
+
+.menu .menu-items {
+	max-height: 378px;
+	overflow-y: auto;
+}
+
+.menu .menu-items .menu-item {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: inset 1px 0px 0px 1px rgba(60, 60, 60, 0.3);
+	height: 35px;
+	line-height: 35px;
+	color: lightgrey;
+	margin-top: 4px;
+	text-align: center;
+	border-radius: 17px;
+	font-size: 12pt;
+	border: 2px solid black;
+	opacity: 0.7;
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: rgba(17, 5, 17, 0.8);
+	border: 2px solid lightgrey;
+	opacity: 1.0;
+	color: white;
+}

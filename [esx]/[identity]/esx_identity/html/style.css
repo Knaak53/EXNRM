@@ -1,0 +1,148 @@
+body {
+	font-family: sans-serif;
+	overflow: hidden;
+	display: none;
+}
+
+.dialog {
+	width: 300px;
+	height: 480px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	/* box-shadow: 0px 0px 50px 0px #000;
+	background-color: #f1f1f1; */
+	background-image: url(https://s2vesportsclub.com/wp-content/uploads/2019/01/header-twitter-1.png);
+	overflow: hidden;
+	opacity: 0.9;
+	border-radius: 20px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+input[type=date] {
+	width: 100%;
+	padding: 7px;
+	text-align: center;
+}
+
+input[type = range]{
+	width: 100%;
+}
+
+input[type=radio]{
+	position: relative;
+	top: 320px;
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+
+input[type=radio]#rboy{
+	left: 40px;
+}
+input[type=radio]#rgirl{
+	right:80px;
+}
+
+label{
+	position: relative;
+	font-size: 40px;
+}
+
+#boy{
+	left: 0px;
+}
+
+
+button {
+	justify-content: center;
+	margin: 10px;
+	padding: 10px;
+	/* background-color: #506be6; */
+	background: linear-gradient(#AD07C7,#1111CA);
+	border: 0px;
+	color: #fff;
+	width: 94%;
+	position: relative;
+	font-size: 15px;
+	bottom: 35px;
+	border-radius: 20px;
+}
+
+#selectedsex{
+	position: relative;
+	width: 282px;
+	left: 10px;
+	height: 30px;
+	bottom: 0px;
+	margin: 0px;
+	text-align: center;
+	color: #fff;
+	border: 0px;
+	vertical-align: middle;
+	line-height: 30px;
+	background: linear-gradient(#AD07C7,#1111CA);
+	border-radius: 20px;
+}
+
+#rangeshow{
+	position: relative;
+	width: 282px;
+	left: 10px;
+	height: 30px;
+	bottom: 0px;
+	margin: 0px;
+	text-align: center;
+	color: #fff;
+	border: 0px;
+	vertical-align: middle;
+	line-height: 30px;
+	background: linear-gradient(#AD07C7,#1111CA);
+	border-radius: 20px;
+}
+
+#m{
+	bottom: 0px;
+}
+#f{
+	bottom: 0px;
+}
+#submit{
+	bottom: 0px;
+}
+
+h1 {
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	/* background-color: #da50e6; */
+	background: linear-gradient(#AD07C7,#1111CA);
+	color: #fff;
+	width: 93%;
+	text-align: center;
+	position: relative;
+	border-radius: 20px;
+}
+
+#heighOutputId{
+	position: relative;
+	left: 105px;
+	width: 40px;
+	height: 50px;
+	font-size: 23px;
+}
+#registerimage{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 25px;
+	right: 20px;
+}

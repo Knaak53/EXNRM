@@ -1,0 +1,11 @@
+{
+    "name": "Twitter",
+    "fr_FR__name": "Twitter",
+    "en_US__name": "Twitter",
+    "de_DE__name": "Twitter",
+    "pl_PL__name": "Twitter",
+    "es_ES__name": "Twitter",
+    "icons": "/html/static/img/icons_app/twitter.png",
+    "routeName": "twitter.splash",
+    "inHomePage": false
+  }

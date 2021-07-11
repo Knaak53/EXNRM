@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="app.js"></script>
+     <video id="myVideo" autoplay muted loop>
+      <source src="video/bg.webm" type='video/webm; codecs="vp8, vorbis"'>
+    </video> 
+     <audio autoplay loop id="bgSong">
+      <source src="audio/streets_of_caronte.mp3" type="audio/mpeg">
+    </audio> 
+    <script>
+      var audio = document.getElementById("bgSong");
+      audio.volume = 0.1;
+    </script>
+    <!--<iframe id="myVideo" width="100%" height="100%" src="https://www.youtube.com/embed/pvomDfQmhWQ?autoplay=1&vq=hd1080&showinfo=0&controls=0&enablejsapi=1&rel=0&loop=1&list=pvomDfQmhWQ&iv_load_policy=3&modestbranding=1" frameborder="0"></iframe>-->
+    <div id="mainContent">
+        <div id="leftside">
+            <div id="logoGap"></div>
+            <div id="tipsContainer">
+                <div id="tipsHeader">CONSEJOS</div>
+                <div id="tipsText"><span id="tipSpan"></span></div>
+            </div> 
+        </div>
+        <div id="rightside">
+            <div id="newsTab">
+                <div id="newsHeader">NOTICIAS</div>
+                <div id="newsContent">
+                    <div class="newYoutube">
+                        <div class="newTitle">Echa un vistazo al video de Caronte</div>
+                         <iframe src="https://www.youtube.com/embed/uPXI-18jhiw?autoplay=1&mute=1&enablejsapi=1&rel=0&iv_load_policy=3&start=65" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media;"></iframe>
+                    </div>
+                    <div class="newText">
+                        <div class="newTitle">Actualizacion de normativa</div>
+                        <div class="textCont"><span class="textSpan">Se ha actualizado la normativa para incluir la siguiente norma:<br><br>- Hay que felarle el rabo a los fundadores para completar el proceso de whitelist</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="credits">
+                <div id="creditsTitle">creditos</div>
+                <div id="creditsContainer">
+                    <div id="creditsSlider">
+                        <span id="sliderText">
+                            Fundadores:&nbsp;&nbsp;TheSativa&nbsp;&nbsp;-&nbsp;&nbsp;Knatus53&nbsp;&nbsp;-&nbsp;&nbsp;Godoflambo
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Programacion:&nbsp;&nbsp;Knatus53&nbsp;&nbsp;-&nbsp;&nbsp;Godoflambo&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Administracion y comunidad:&nbsp;&nbsp;TheSativa
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Mapeados:&nbsp;&nbsp;Hakos&nbsp;&nbsp;-&nbsp;&nbsp;Sedegz
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Diseño grafico y de interfaces:&nbsp;&nbsp;Mai visualart&nbsp;&nbsp;-&nbsp;&nbsp;Metarasis&nbsp;&nbsp;-&nbsp;&nbsp;godoflambo&nbsp;&nbsp;-&nbsp;&nbsp;sedegz&nbsp;&nbsp;-&nbsp;&nbsp;Hakos
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Testers:&nbsp;&nbsp;Papo-69&nbsp;&nbsp;-&nbsp;&nbsp;Stefan&nbsp;&nbsp;-&nbsp;&nbsp;CJ&nbsp;&nbsp;-&nbsp;&nbsp;Lugilde&nbsp;&nbsp;-&nbsp;&nbsp;Montoro
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Doblaje:&nbsp;&nbsp;knatus53&nbsp;&nbsp;-&nbsp;&nbsp;MGfenix&nbsp;&nbsp;-&nbsp;&nbsp;Godoflambo&nbsp;&nbsp;-&nbsp;&nbsp;Alexia&nbsp;&nbsp;-&nbsp;&nbsp;Charline&nbsp;&nbsp;-&nbsp;&nbsp;Lugilde&nbsp;&nbsp;-&nbsp;&nbsp;Lydoe
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Agradecimientos: ...
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="songContainer">
+                <div id="songTitle">Estas escuchando</div>
+                <div id="songContent">
+                    <div id="songImg"></div>
+                    <div id="songText">Streets of Caronte<br>by - godoflambo</div>
+                    <div id="songMute" class="muteGlow">M</div>
+                </div>
+            </div>
+            <div id="loadingContainer">
+                <div id="loadingLogoContainer"></div>
+                <div id="loading">Cargando .</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

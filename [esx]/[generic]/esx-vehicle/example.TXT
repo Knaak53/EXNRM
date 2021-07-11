@@ -1,0 +1,123 @@
+RegisterCommand('ems', function(source, args, user)
+	if PlayerData.job.name == 'ambulance' then
+
+		if tostring(args[1]) == nil then
+			return
+		else
+			if tostring(args[1]) ~= nil then
+				local argh = tostring(args[1])
+
+				if argh == '1' then
+					local model = GetHashKey(Config.EMSVehList[1])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 6.0, 2.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '2' then
+					local model = GetHashKey(Config.EMSVehList[2])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 6.0, 1.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle) --example is this 
+					
+					TriggerServerEvent('garage:addKeys', plate)   --example is this and this
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '3' then
+					local model = GetHashKey(Config.EMSVehList[3])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 6.0, 1.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '4' then
+					local model = GetHashKey(Config.EMSVehList[4])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 6.0, 1.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '5' then
+					local model = GetHashKey(Config.EMSVehList[5])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 6.0, 1.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '6' then
+					local model = GetHashKey(Config.EMSVehList[6])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 6.0, 1.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '7' then
+					local model = GetHashKey(Config.EMSVehList[7])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 6.0, 1.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '8' then -- Boat
+					local model = GetHashKey(Config.EMSVehList[8])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 10.0, 2.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				elseif argh == '9' then -- Heli
+					local model = GetHashKey(Config.EMSVehList[9])
+					local playerPed = PlayerPedId()
+					local coords    = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 1.5, 10.0, 1.0)
+					local heading = GetEntityHeading(playerPed)
+
+					rrp.Game.SpawnVehicle(model, coords, heading, function(vehicle)
+					local plate = GetVehicleNumberPlateText(vehicle)
+					
+					TriggerServerEvent('garage:addKeys', plate)
+					TriggerEvent('notification', 'You received keys to the vehicle.',1)
+					end)
+				end
+			end
+		end
+
+	end
+end)

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+</head>
+
+<body>
+    <script src="js/config.js"></script>
+    <script src="locales/en.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/inventory.js"></script>
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                clickOutside: true
+            });
+        });
+    </script>
+
+    <div class="ui">
+        <div class="inventory">
+            <div id="inventorySide">
+                <div id="playerInventory"></div>
+                <div id="controls">
+                    <div id="weight"></div> 
+                    <input type="number" class="control" id="count" value="1" style="border: 1px solid lightgrey;" placeholder="cantidad">
+                    <div class="control" id="use"></div>
+                    <div class="control" id="give"></div>
+                    <div class="control" id="drop"></div>
+                </div>
+            </div>  
+            <div id="infoContainer">
+                <div id="globalLeftArrow"><</div> 
+                <div id="currentInfoContainer">    
+                    <div id="otherInventory">
+                        <div id="playerInfo">
+                            <div id="identificador"></div>
+                            <div id="nombre"></div>
+                            <div id="cantidades">
+                                <div class="cantidad">
+                                    <div class="cabeceraCant">Efectivo</div>
+                                    <span id="dinero" style="color: green; font-size: 18pt; font-weight: bold;"></span>
+                                </div>   
+                                <div class="cantidad">
+                                    <div class="cabeceraCant">Cuenta bancaria</div>
+                                    <span id="banco" style="color: yellow; font-size: 18pt;"></span>
+                                </div>
+                                <div class="cantidad">
+                                    <div class="cabeceraCant">Dinero negro</div>
+                                    <span id="negro" style="color: red; font-size: 18pt; font-weight: bold;"></span>
+                                </div>          
+                            </div>               
+                            <div id="contEmpleo">
+                                <div id="cabeceraInfo"><div class="dflex50w">Informacion general</div><div class="dflex50w">empleo</div></div>
+                                <div class="infoRow"><span class="marginl3" id="fecha"></span></div>
+                                <div class="infoRow"><span class="marginl3" id="empleo"></span></div>
+                                <div class="infoRow"><span class="marginl3" id="altura"></span></div>
+                                <div class="infoRow"><span class="marginl3" id="grado"></span></div>
+                                <div class="infoRow"><span class="marginl3" id="sexo"></span></div>
+                                <div class="infoRow"><span class="marginl3" id="nivelEmp"></span></div>
+                                <div class="lastRow"><span class="marginl3" id="phone"></span></div>
+                                <div class="lastRow"><span class="marginl3" id="cuentaEmpresa"></span></div>
+                            </div>
+                        </div>                        
+                        <div id="licencias">
+                            <div id="licenciasCabecera">documentacion</div>
+                            <div id="licencia">
+                                <div class="arrowl"><</div>
+                                    <div id="dni"></div>
+                                <div class="arrowr">></div>  
+                            </div> 
+                            <div id="ver">Ver</div>  
+                            <div id="mostrar">Enseñar</div>      
+                        </div>
+                    </div>
+                    <div id="billingInfo">
+                        <div id="billingHeader">multas</div>
+                        <div id="billsContainer"></div>                       
+                        <div id="factHeader">facturas</div>
+                        <div id="factContainer"></div>
+                        <div id="paymentButton">Pagar</div>
+                    </div>
+                    <div id="questInfo">
+                    	<div id="questHeader">trabajos</div>
+                    	<div id="questContainer">
+                    	</div>
+                    </div>
+                    <div id="statsInfo">
+                        <div id="statsHeader">estadisticas</div>
+                        <div id="statsContainer">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="globalRightArrow">></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog">
+        <div id="nearPlayers">
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#use").html(invLocale.useItem);
+        $("#give").html(invLocale.giveItem);
+        $("#drop").html(invLocale.dropItem);
+    });
+</script>
+
+</html>
