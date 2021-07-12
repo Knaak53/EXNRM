@@ -1620,7 +1620,7 @@ function LoadCharacter(data, playIdleWhenLoaded, callback)
     if callback ~= nil then
         callback()
     end
-    TriggerEvent("caronte_loadscreen:close")
+    TriggerEvent("CityName_loadscreen:close")
 end
 
 -- Map Locations
@@ -1797,7 +1797,7 @@ if Config.EnableClothingShops then
             SetBlipAsShortRange(blip, true)
 
             BeginTextCommandSetBlipName('STRING')
-            AddTextComponentString('Caronte Outlet')
+            AddTextComponentString('CityName Outlet')
             EndTextCommandSetBlipName(blip)
         end
     end)
@@ -1813,7 +1813,7 @@ if Config.EnableBarberShops then
             SetBlipAsShortRange(blip, true)
 
             BeginTextCommandSetBlipName('STRING')
-            AddTextComponentString('Caronte Haircuts')
+            AddTextComponentString('CityName Haircuts')
             EndTextCommandSetBlipName(blip)
         end
     end)

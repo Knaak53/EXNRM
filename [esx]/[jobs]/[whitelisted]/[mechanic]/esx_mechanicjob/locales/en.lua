@@ -1,5 +1,5 @@
 Locales['en'] = {
-  ['mechanic']                  = 'Caronte Customs Central',
+  ['mechanic']                  = 'CityName Customs Central',
   ['drive_to_indicated']        = '~y~Conduce~s~ hasta la posicion indicada.',
   ['mission_canceled']          = 'Trabajo ~r~CANCELADO~s~',
   ['vehicle_list']              = 'Lista de vehiculos',

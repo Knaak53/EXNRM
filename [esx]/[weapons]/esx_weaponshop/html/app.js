@@ -6,7 +6,7 @@ window.addEventListener("message", function (event) {
             { name: 'WEAPON_PISTOL', label: "Pistola 9mm", text: "Pistola de corredera clasica, perfecta para defensa personal, dispara municion estandar de 9mm.", price: 800},
             { name: 'WEAPON_MACHETE', label: "Machete Jungle King", text: "El machete jungle king es la herramienta perfecta para abrirse paso en la espesura, se vende como arma para defensa personal.", price: 400},
             { name: 'WEAPON_KNIFE', label: "Cuchillo de supervivencia", text: "Un cuchillo de supervivencia con doble filo, antes incluia material de supervivencia en el mango, pero esa version se retiro del mercado.", price: 250},
-            { name: 'WEAPON_BAT', label: "Bate de Baseball", text: "Debido a los recientes incidentes entre bandas callejeras, el gobierno de Caronte ha decidido considerar los bates como armas blancas.", price: 175}
+            { name: 'WEAPON_BAT', label: "Bate de Baseball", text: "Debido a los recientes incidentes entre bandas callejeras, el gobierno de CityName ha decidido considerar los bates como armas blancas.", price: 175}
         ]; 
         
         $("#weaponTitle").html(weaponList[weaponIndex].label);

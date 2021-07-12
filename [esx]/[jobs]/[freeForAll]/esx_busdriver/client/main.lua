@@ -25,7 +25,7 @@ engineNeedsToBeOff = true
 
 -- Map Blips
 job_blips = {
-    {name = "Servicio de autobus Ciudad de Caronte", x = 454.09, y = -604.43},
+    {name = "Servicio de autobus Ciudad de CityName", x = 454.09, y = -604.43},
     {name = "Servicio de autobus Sandy Shores", x = 1997.38, y = 3779.69},
     {name = "Servicio de autobus Paleto Bay", x = -351.94, y = 6068.86}
 }

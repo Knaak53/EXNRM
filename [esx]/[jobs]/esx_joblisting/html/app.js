@@ -5,7 +5,7 @@ window.addEventListener("message", function (event) {
         var jobList = [
             { 
                 name: 'garbage', 
-                label: "Servicio de basuras de Caronte", 
+                label: "Servicio de basuras de CityName", 
                 text: "Acaba de llegarnos una vacante para el servicio de recogida de basuras de la ciudad. El puesto no cubre las zonas de Sandy Shore ni Paleto Bay", 
                 requeriments: []
             },
@@ -23,8 +23,8 @@ window.addEventListener("message", function (event) {
             },
             { 
                 name: 'bus', 
-                label: "Servicio de transportes de Caronte", 
-                text: "La ciudad necesita conductores profesionales de autobuses para las lineas de: Ciudad de Caronte, Sandy Shores y Paleto Bay.",
+                label: "Servicio de transportes de CityName", 
+                text: "La ciudad necesita conductores profesionales de autobuses para las lineas de: Ciudad de CityName, Sandy Shores y Paleto Bay.",
                 requeriments: [
                     "truck"
                 ]
@@ -39,13 +39,13 @@ window.addEventListener("message", function (event) {
             },
             { 
                 name: 'woodcutter', 
-                label: "Industria maderera de caronte", 
-                text: "Con la invención de los superfertilizantes, los leñadores del vivero de Caronte no dan a basto para recoger madera, hay varias plazas disponibles para este empleo.",
+                label: "Industria maderera de CityName", 
+                text: "Con la invención de los superfertilizantes, los leñadores del vivero de CityName no dan a basto para recoger madera, hay varias plazas disponibles para este empleo.",
                 requeriments: []
             },
             { 
                 name: 'miner', 
-                label: "Caronte Mining S.A", 
+                label: "CityName Mining S.A", 
                 text: "Un nuevo complejo minero ha abierto en el norte y se requieren oficiales especialistas en mineria, draga, fundición y forja del metal.",
                 requeriments: [
                     "pickaxe",
@@ -54,7 +54,7 @@ window.addEventListener("message", function (event) {
             },
             { 
                 name: 'gopostal', 
-                label: "Servicio de correos de Caronte", 
+                label: "Servicio de correos de CityName", 
                 text: "El servicio postal municipal necesita repartidores debido al auge de las compras online para hacer llegar los paquetes a tiempo a los ciudadanos.",
                 requeriments: [],
                 optionals: [
@@ -63,8 +63,8 @@ window.addEventListener("message", function (event) {
             }
         ];
         
-        $("#jobTitle").html("Oficina de empleo de Caronte");
-        $("#jobText").html("Sea bienvenido a la oficina de empleo de la ciudad de Caronte. Utilice nuestra app para navegar por los puestos vacantes ofrecidos en la ciudad.");
+        $("#jobTitle").html("Oficina de empleo de CityName");
+        $("#jobText").html("Sea bienvenido a la oficina de empleo de la ciudad de CityName. Utilice nuestra app para navegar por los puestos vacantes ofrecidos en la ciudad.");
         $("#jobImage").css("background-image", "url(img/welcome.png)");
 
         $( "#arrowl" ).click(function() {

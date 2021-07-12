@@ -1,7 +1,7 @@
 Locales['en'] = {
     ['invalid_amount'] = 'Cantidad Incorrecta',
     ['atm_blip'] = 'Cajero Automatico',
-    ['bank_blip'] = 'Banco de Caronte',
+    ['bank_blip'] = 'Banco de CityName',
     ['atm_open'] = 'Pulsa ~INPUT_PICKUP~ para acceder a tu cuenta ~b~',
     ['no_money'] = 'No tienes suficiente dinero.',
     ['recieved1'] = 'Has recibido dinero: ',

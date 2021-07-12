@@ -30,7 +30,7 @@ Config.Zones = {
 		Size  = {x = 2.0, y = 2.0, z = 2.2},
 		Color = {r = 0, g = 0, b = 204},
 		Marker= 36,
-		Name  = 'Caronte Customs La Mesa',
+		Name  = 'CityName Customs La Mesa',
 		Hint  = _U('press_custom'),
 		Blip = true
 	},
@@ -40,7 +40,7 @@ Config.Zones = {
 		Size  = {x = 2.0, y = 2.0, z = 2.2},
 		Color = {r = 0, g = 0, b = 204},
 		Marker= 36,
-		Name  = 'Caronte Customs Redwood Lights',
+		Name  = 'CityName Customs Redwood Lights',
 		Hint  = _U('press_custom'),
 		Blip = true
 	},
@@ -50,7 +50,7 @@ Config.Zones = {
 		Size  = {x = 2.0, y = 2.0, z = 2.2},
 		Color = {r = 0, g = 0, b = 204},
 		Marker= 36,
-		Name  = 'Caronte Customs Paleto Bay',
+		Name  = 'CityName Customs Paleto Bay',
 		Hint  = _U('press_custom'),
 		Blip = true
 	}
@@ -445,7 +445,7 @@ end
 
 Config.Menus = {
 	main = {
-		label		= 'CARONTE CUSTOMS',
+		label		= 'CityName CUSTOMS',
 		parent		= nil,
 		upgrades	= _U('upgrades'),
 		cosmetics	= _U('cosmetics')

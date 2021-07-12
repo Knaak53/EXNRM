@@ -111,7 +111,7 @@ Config.messages = {
 					duration = 4000
 				},
 				bye3 = {
-					message = 'Gracias por confiar en badulakes Caronte!',
+					message = 'Gracias por confiar en badulakes CityName!',
 					audio = "adios3.mp3",
 					duration = 4000
 				}
@@ -123,12 +123,12 @@ Config.messages = {
 		npcImage = 'emp_office.png',
 		messages = {
 			jobInProcess = {
-				message = 'Saludos! Me pongo en contacto con usted desde la oficina de empleo de Caronte para informarle de que su solicitud ha sido procesada y su curriculum ha sido entregado a la empresa, le deseamos mucha suerte en el proceso de selección.',
+				message = 'Saludos! Me pongo en contacto con usted desde la oficina de empleo de CityName para informarle de que su solicitud ha sido procesada y su curriculum ha sido entregado a la empresa, le deseamos mucha suerte en el proceso de selección.',
 				audio = 'curriculum.mp3',
 				duration = 13000
 			},
 			contracted = {
-				message = 'Saludos! Le llamo desde la oficina de empleo de Caronte para informarle de que la empresa quiere contratar sus servicios. Enhorabuena! Recibirá noticias por parte de la empresa para gestionar su incorporación en breve.',
+				message = 'Saludos! Le llamo desde la oficina de empleo de CityName para informarle de que la empresa quiere contratar sus servicios. Enhorabuena! Recibirá noticias por parte de la empresa para gestionar su incorporación en breve.',
 				audio = 'contratado.mp3',
 				duration = 10000
 			}
@@ -140,12 +140,12 @@ Config.messages = {
 		messages = {
 			hello = {
 				hello1 = {
-					message = "Hey, que pasa, estas en la mejor armeria de Caronte, espero que tengas licencia de armas.",
+					message = "Hey, que pasa, estas en la mejor armeria de CityName, espero que tengas licencia de armas.",
 					audio = "hello1.mp3",
 					duration = 7000
 				},
 				hello2 = {
-					message = "Hey, que pasa, estas en la mejor armeria de Caronte, espero que tengas licencia de armas.",
+					message = "Hey, que pasa, estas en la mejor armeria de CityName, espero que tengas licencia de armas.",
 					audio = "hello2.mp3",
 					duration = 4200
 				}

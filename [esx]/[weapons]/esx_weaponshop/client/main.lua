@@ -1,5 +1,5 @@
 ESX = nil
-local title = "Armero de Caronte"
+local title = "Armero de CityName"
 local img = "weapons.png"
 
 

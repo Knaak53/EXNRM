@@ -1,14 +1,14 @@
 Config                            = {}
 Config.DrawDistance               = 25.0
 Config.nameJob                    = "works"
-Config.nameJobLabel               = "Mantenimiento de Caronte"
+Config.nameJobLabel               = "Mantenimiento de CityName"
 Config.platePrefix                = "MCC"
 Config.Locale                     = 'fr'
 
 Config.Vehicles = {
 	Truck = {
 		Spawner = 1,
-		Label = 'Caronte service truck',
+		Label = 'CityName service truck',
 		Hash = "boxville",
 		Livery = 0,
 		Trailer = "none",
@@ -26,7 +26,7 @@ Config.Zones = {
     Type    = 1,
 	BlipSprite = 354,
 	BlipColor = 46,
-	BlipName = 'Oficinas de mantenimiento de Caronte',
+	BlipName = 'Oficinas de mantenimiento de CityName',
 	hint = 'Pulsa ~INPUT_CONTEXT~ para acceder al vestuario',
   },
 

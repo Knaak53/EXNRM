@@ -48,8 +48,8 @@ Citizen.CreateThread(function()
 end)
 
 
-RegisterNetEvent("caronte_insurance:warpToVehIfPending")
-AddEventHandler("caronte_insurance:warpToVehIfPending",function(netveh)
+RegisterNetEvent("CityName_insurance:warpToVehIfPending")
+AddEventHandler("CityName_insurance:warpToVehIfPending",function(netveh)
   print("llega evento warp")
   if pendingOfWarping then
     Citizen.CreateThread(function() 

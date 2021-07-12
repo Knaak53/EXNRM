@@ -33,7 +33,7 @@ Citizen.CreateThread(function()
 	SetBlipColour(blip, 7)
 	SetBlipAsShortRange(blip, true)
 	BeginTextCommandSetBlipName("STRING")
-	AddTextComponentString("Gimnasio de Caronte")
+	AddTextComponentString("Gimnasio de CityName")
 	EndTextCommandSetBlipName(blip)
 end)
 

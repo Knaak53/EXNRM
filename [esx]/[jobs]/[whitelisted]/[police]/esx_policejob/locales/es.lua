@@ -94,7 +94,7 @@ Locales['es'] = {
   ['police_stock'] = 'almacen Policial',
   -- Misc
   ['remove_prop'] = 'pulsa ~INPUT_CONTEXT~ para eliminar el objeto',
-  ['map_blip'] = 'Comisaria de Caronte',
+  ['map_blip'] = 'Comisaria de CityName',
   ['unrestrained_timer'] = 'Sientes como las esposas se aflojan y puedes quitartelas',
   -- Notifications
   ['alert_police'] = 'alerta policia',

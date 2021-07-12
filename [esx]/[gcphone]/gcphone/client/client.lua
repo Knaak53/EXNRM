@@ -859,7 +859,7 @@ Citizen.CreateThread(function()
     SetBlipColour(blip, 64)
     SetBlipAsShortRange(blip, true)
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString("Caronte Electronics")
+    AddTextComponentString("CityName Electronics")
     EndTextCommandSetBlipName(blip)
   end
 end)

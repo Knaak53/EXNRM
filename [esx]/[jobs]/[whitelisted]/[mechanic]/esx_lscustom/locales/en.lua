@@ -7,7 +7,7 @@ Locales['en'] = {
   ['press_custom'] = 'Estas en zona de tuneo',
   ['level'] = 'Nivel %s',
   ['neon'] = 'Neon',
-  ['blip_name'] = 'Caronte Customs',
+  ['blip_name'] = 'CityName Customs',
 -- Paint Colors
   -- Black
   ['black'] = 'Negro',

@@ -1,6 +1,6 @@
 Locales['en'] = {
 
-	['blip_job']				= 'Oficina de correos de Caronte',
+	['blip_job']				= 'Oficina de correos de CityName',
 
 	--Vestiaire
 	['no_outfit']			    = 'No hay ropa de repartidor disponible',
@@ -13,9 +13,9 @@ Locales['en'] = {
 
 	--Livraison
 	['Richman']					= 'Zona : "~o~Richman Neighborhood~w~" ',
-	['RockfordHills']		    = 'Zona : "~g~Caronte Hills Neighborhood~w~" ',
+	['RockfordHills']		    = 'Zona : "~g~CityName Hills Neighborhood~w~" ',
 	['Vespucci']				= 'Zona : "~b~Vespucci Neighborhood~w~" ',
-	['SLS']						= 'Zona : "~y~Spud of Caronte~w~" ',
+	['SLS']						= 'Zona : "~y~Spud of CityName~w~" ',
 
 	['join_next']				= '~g~[•] ~b~Ve a ~w~la propiedad~r~ indicada en tu GPS',
 	['pickup']					= 'Pulsa ~INPUT_PICKUP~ para entregar',
@@ -47,7 +47,7 @@ Locales['en'] = {
 	['not_enough']				= '~r~Invalid Quantity.',
 
 		-- Notification Delivery
-	['notif_title_delivery']    = '~r~Correos Caronte',
+	['notif_title_delivery']    = '~r~Correos CityName',
 	['notif_district']			= '[Tu ruta:]\n----------------------\n%s',	
 
 

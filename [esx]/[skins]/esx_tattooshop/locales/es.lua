@@ -5,7 +5,7 @@ Locales['es'] = {
   ['go_back_to_menu']    = 'Volver',
   ['tattoo_item']        = 'Tatuaje %s - %s',
   ['tattoos']            = 'Tatuajes',
-  ['tattoo_shop']        = 'Caronte INK',
+  ['tattoo_shop']        = 'CityName INK',
   ['bought_tattoo']      = 'te has ~y~tatuado~s~ por ~g~%s €~s~',
   ['not_enough_money']   = 'no tienes suficiente dinero, te faltan ~r~%s €~s~'
 }

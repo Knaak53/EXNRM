@@ -9,5 +9,5 @@ Locales ['es'] = {
   ['shop_menu_title'] = 'Tienda de Armas',
   ['shop_menu_prompt'] = 'Pulsa ~INPUT_CONTEXT~ para acceder a la tienda de armas.',
   ['shop_menu_item'] = '%s €',
-  ['map_blip'] = 'Armeria de Caronte',
+  ['map_blip'] = 'Armeria de CityName',
 }

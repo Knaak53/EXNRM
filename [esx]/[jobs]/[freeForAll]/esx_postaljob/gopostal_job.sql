@@ -2,7 +2,7 @@
 -- Contenu de la table `jobs`
 --
 INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
-('gopostal', 'Correos Caronte', 0);
+('gopostal', 'Correos CityName', 0);
 
 --
 -- Contenu de la table `job_grades`

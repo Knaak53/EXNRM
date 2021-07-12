@@ -80,6 +80,6 @@ Locales['es'] = {
   ['not_enough_bandage'] = 'No tienes suficientes ~b~BENDAS~s~.',
   ['healed'] = 'Has sido curado.',
   -- Blips
-  ['blip_hospital'] = 'Hospital de Caronte',
+  ['blip_hospital'] = 'Hospital de CityName',
   ['blip_dead'] = 'Jugador inconsciente',
 }

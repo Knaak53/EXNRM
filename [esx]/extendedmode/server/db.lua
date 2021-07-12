@@ -24,7 +24,7 @@ auth = base64(auth)
 
 db = {}
 exposedDB = {}
-_Prefix = "Caronte"
+_Prefix = "CityName"
 _PrefixError = "ERROR"
 
 function db.firstRunCheck()

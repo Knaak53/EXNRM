@@ -94,7 +94,7 @@ jobs = {
     },
     bus = {
         name = "bus",
-        label = "Autobuses Caronte S.A",
+        label = "Autobuses CityName S.A",
         job_grades = {
             empleado = {
                 job_name = "bus",
@@ -154,7 +154,7 @@ jobs = {
     },
     gopostal = {
         name = "gopostal",
-        label = "Caronte Postal & C.",
+        label = "CityName Postal & C.",
         job_grades = {
             empleado = {
                 job_name = "gopostal",
@@ -920,7 +920,7 @@ jobs = {
     },
     taxi = {
         name = "taxi",
-        label = "Caronte Taxi S.L",
+        label = "CityName Taxi S.L",
         job_grades = {
             recrue = {
                 job_name = "taxi",
