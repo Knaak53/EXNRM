@@ -11,11 +11,12 @@ Temporal requiriment for testing:
 2 - Create a Database in couchDB called "essentialmode", for that you can access CouchDB with the link http://localhost:5984/_utils/ if you used the default binaries for installation
 
 3 - write in your cfg:
-
+```
 set es_couchdb_url "127.0.0.1"
 set es_couchdb_port 5984
 set es_couchdb_password "username:password" - Which you choose when installing couchDB
 set es_defaultDatabase 2.
+```
 
 3 - Run the server , wait for load and stop it 2-3 times, the server will be autoinstalled with the DB.
 
